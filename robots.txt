@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fixmijnkoffiemachine.be/sitemap.xml
+Sitemap: https://fixmijnkoffiemachine.com/sitemap.xml
