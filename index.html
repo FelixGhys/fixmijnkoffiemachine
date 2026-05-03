@@ -146,6 +146,7 @@
     }
     .logo img { height: 32px; width: auto; }
     .logo .logo-orange { color: #E8620A; }
+    .logo .logo-dot { color: #E8620A; }
     .logo-icon { display: none; }
     .nav-links {
       display: flex;
@@ -880,6 +881,9 @@
       .form-row { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
     }
+    @media (max-width: 600px) {
+      .nav-phone { display: none; }
+    }
     @media (max-width: 480px) {
       .diensten-grid { grid-template-columns: 1fr; }
       .steps { grid-template-columns: 1fr; }
@@ -906,9 +910,9 @@
 <!-- === NAVBAR === -->
 <nav class="navbar">
   <div class="container">
-    <div class="logo">
-      <img src="Logo fix mijn koffiemachine.be.png" alt="Fixmijnkoffiemachine.be" />
-    </div>
+    <a href="#" class="logo">
+      fix<span class="logo-orange">mijn</span>koffiemachine<span class="logo-dot">.be</span>
+    </a>
     <ul class="nav-links">
       <li><a href="#diensten">Diensten</a></li>
       <li><a href="#hoe">Hoe het werkt</a></li>
@@ -1510,8 +1514,8 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="#" class="logo">
-          <img src="Logo fix mijn koffiemachine.be.png" alt="Fixmijnkoffiemachine.be" style="filter:brightness(0) invert(1);" />
+        <a href="#" class="logo" style="color:var(--white);">
+          fix<span style="color:var(--orange);">mijn</span>koffiemachine<span style="color:var(--orange);">.be</span>
         </a>
         <p>Specialist in reparatie van volautomatische koffiemachines in Oost- en West-Vlaanderen. Snel, eerlijk en vakkundig vanuit Brugge.</p>
       </div>
