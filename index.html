@@ -8,7 +8,10 @@
   <meta name="keywords" content="volautomaat reparatie, koffiemachine reparatie, Jura reparatie, DeLonghi reparatie, Philips Saeco reparatie, Siemens reparatie, Brugge, West-Vlaanderen, Oost-Vlaanderen" />
 
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#E8620A" />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://fixmijnkoffiemachine.com" />
@@ -1576,10 +1579,15 @@
     zoomControl: true,
   });
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    attribution: '© OpenStreetMap, © CARTO',
-    subdomains: 'abcd',
-    maxZoom: 19,
+  // Esri Dark Gray (geen API key nodig; CARTO vereist nu een key)
+  const esri = 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/';
+  L.tileLayer(esri + 'World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles © Esri — Esri, HERE, Garmin, © OpenStreetMap',
+    maxZoom: 16,
+  }).addTo(map);
+  L.tileLayer(esri + 'World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 16,
+    pane: 'shadowPane',
   }).addTo(map);
 
   // West-Vlaanderen — kustlijn + provinciegrenzen
