@@ -969,6 +969,8 @@
     }
     .consent input { width: 20px; height: 20px; margin-top: 1px; accent-color: var(--orange); flex-shrink: 0; }
     .wz-error { color: #dc2626; font-size: .85rem; font-weight: 600; margin-top: 10px; min-height: 1.2em; }
+    .wz-privacy { font-size: .78rem; color: var(--gray-600); margin-top: 8px; }
+    .wz-privacy a { color: var(--gray-600); text-decoration: underline; }
     .wz-nav { display: flex; gap: 10px; margin-top: 22px; }
     .wz-back {
       padding: 15px 20px; border: 1.5px solid var(--gray-200); background: var(--white); color: var(--gray-800);
@@ -1314,6 +1316,7 @@
         Reparatie aanvragen
       </a>
       <p style="margin-top:12px;font-size:.85rem;color:var(--gray-600);">Alle prijzen incl. BTW · Excl. wisselstukken · Geen enkel stuk geplaatst zonder uw goedkeuring op prijs</p>
+      <p style="margin-top:8px;font-size:.95rem;color:var(--blue);font-weight:600;">Een gemiddelde herstelling kost in totaal tussen €150 en €200 (incl. btw). Het kan minder zijn, of meer als er grotere onderdelen nodig zijn.</p>
     </div>
   </div>
 </section>
@@ -1353,8 +1356,16 @@
               <div class="afgifte-when">Op afspraak</div>
             </div>
           </li>
-          <li class="afgifte-item" data-loc="3" style="--c:#DB2777" tabindex="0">
+          <li class="afgifte-item" data-loc="3" style="--c:#2563EB" tabindex="0">
             <span class="afgifte-num">4</span>
+            <div>
+              <div class="afgifte-name">Gent · Muide</div>
+              <div class="afgifte-addr">Muide, 9000 Gent</div>
+              <div class="afgifte-when">Op afspraak</div>
+            </div>
+          </li>
+          <li class="afgifte-item" data-loc="4" style="--c:#DB2777" tabindex="0">
+            <span class="afgifte-num">5</span>
             <div>
               <div class="afgifte-name">Gentbrugge</div>
               <div class="afgifte-addr">9050 Gentbrugge</div>
@@ -1375,7 +1386,7 @@
           <button type="button" data-zoom="gent">Gent</button>
         </div>
         <div class="map-wrapper">
-          <div id="map" role="img" aria-label="Kaart met de 4 afgiftepunten in Brugge, Gent en Gentbrugge"></div>
+          <div id="map" role="img" aria-label="Kaart met de 5 afgiftepunten in Brugge, Gent en Gentbrugge"></div>
         </div>
       </div>
     </div>
@@ -1471,6 +1482,8 @@
                   <span><span><b>Brugge · Pathoekeweg</b><small>Op afspraak</small></span><i class="loc-radio"></i></span></label>
                 <label class="loc-card" style="--c:#0D9488"><input type="radio" name="afgiftepunt" value="Gent - Keizer Karelstraat (op afspraak)" />
                   <span><span><b>Gent · Keizer Karelstraat</b><small>Op afspraak</small></span><i class="loc-radio"></i></span></label>
+                <label class="loc-card" style="--c:#2563EB"><input type="radio" name="afgiftepunt" value="Gent - Muide (op afspraak)" />
+                  <span><span><b>Gent · Muide</b><small>Op afspraak</small></span><i class="loc-radio"></i></span></label>
                 <label class="loc-card" style="--c:#DB2777"><input type="radio" name="afgiftepunt" value="Gentbrugge (op afspraak)" />
                   <span><span><b>Gentbrugge</b><small>Op afspraak</small></span><i class="loc-radio"></i></span></label>
               </div>
@@ -1500,7 +1513,8 @@
             </div>
             <div class="summary" id="summary"></div>
             <label class="consent"><input type="checkbox" id="akkoord" name="akkoord_enkel_beschreven_problemen" value="Ja" />
-              <span>Ik begrijp dat <b>enkel de problemen in mijn lijst</b> hersteld worden. Bijkomende herstellingen gebeuren pas na mijn akkoord. *</span></label>
+              <span>Ik begrijp dat <b>enkel de problemen in mijn lijst</b> hersteld worden. Bijkomende herstellingen gebeuren pas na mijn akkoord. Ik ga akkoord met de <a href="/algemene-voorwaarden/" target="_blank" rel="noopener" style="color:var(--orange);">algemene voorwaarden</a>. *</span></label>
+            <p class="wz-privacy">We gebruiken je gegevens enkel om je aanvraag te behandelen. Meer info in ons <a href="/privacybeleid/" target="_blank" rel="noopener">privacybeleid</a>.</p>
           </fieldset>
 
           <p class="wz-error" id="wzError" role="alert"></p>
@@ -1577,11 +1591,23 @@
         </div>
         <div class="faq-a">
           <div class="faq-a-inner">
-            Elke herstelling start met een vast tarief van <strong>€75 incl. BTW</strong>. Daarin zitten de diagnose én het eerste uur werk. Duurt de reparatie langer, dan rekenen we <strong>€60 per bijkomend uur</strong>. Je krijgt altijd een prijsbevestiging voor we aan de slag gaan — geen verrassingen achteraf.
+            Elke herstelling start met een vast tarief van <strong>€75 incl. BTW</strong>. Daarin zitten de diagnose én het eerste uur werk. Duurt de reparatie langer, dan rekenen we <strong>€60 per bijkomend uur</strong>. Wisselstukken komen er apart bij. Een gemiddelde herstelling kost in totaal <strong>tussen €150 en €200</strong>; het kan minder zijn, of meer als er grotere onderdelen nodig zijn. Je krijgt altijd een prijsbevestiging voor we aan de slag gaan — geen verrassingen achteraf.
           </div>
         </div>
       </div>
 
+
+      <div class="faq-item">
+        <div class="faq-q">
+          Wat kost een gemiddelde herstelling?
+          <div class="faq-arrow">▼</div>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Een gemiddelde herstelling kost in totaal <strong>tussen €150 en €200</strong> (incl. btw). Dat is een richtprijs: een eenvoudige herstelling kan minder kosten, en als er grotere onderdelen nodig zijn, zoals een pomp of een zetgroep, kan het ook meer zijn. Je betaalt €75 voor de diagnose en het eerste uur werk, €60 per bijkomend uur en eventuele onderdelen. Onderdelen plaatsen we nooit zonder jouw akkoord op de prijs, dus je weet altijd vooraf waar je aan toe bent.
+          </div>
+        </div>
+      </div>
       <div class="faq-item">
         <div class="faq-q">
           Welke merken repareren jullie?
@@ -1601,7 +1627,7 @@
         </div>
         <div class="faq-a">
           <div class="faq-a-inner">
-            Nee. Alle herstellingen gebeuren in ons atelier. Je brengt je machine binnen zonder afspraak bij <strong>Matubu Coffee Roastery, shop Dudzele (Brugge)</strong> op woensdag, donderdag, zaterdag en zondag van 10 tot 18 uur, of op afspraak in <strong>Brugge (Pathoekeweg)</strong>, <strong>Gent (Keizer Karelstraat)</strong> of <strong>Gentbrugge</strong>. Kan je ondertussen niet zonder koffie? Vraag dan een <strong>leenmachine</strong> aan in het formulier (betalend, prijs afhankelijk van machine en duur).
+            Nee. Alle herstellingen gebeuren in ons atelier. Je brengt je machine binnen zonder afspraak bij <strong>Matubu Coffee Roastery, shop Dudzele (Brugge)</strong> op woensdag, donderdag, zaterdag en zondag van 10 tot 18 uur, of op afspraak in <strong>Brugge (Pathoekeweg)</strong>, <strong>Gent (Keizer Karelstraat of Muide)</strong> of <strong>Gentbrugge</strong>. Kan je ondertussen niet zonder koffie? Vraag dan een <strong>leenmachine</strong> aan in het formulier (betalend, prijs afhankelijk van machine en duur).
           </div>
         </div>
       </div>
@@ -1673,7 +1699,7 @@
         </div>
         <div class="faq-a">
           <div class="faq-a-inner">
-            Ja, in de shop van <strong>Matubu Coffee Roastery in Dudzele</strong> (Dorpsplein 17, Brugge) op woensdag, donderdag, zaterdag en zondag van 10:00 tot 18:00. In de andere afgiftepunten (Pathoekeweg in Brugge, Keizer Karelstraat in Gent en Gentbrugge) werken we op afspraak. Vul in elk geval eerst het aanvraagformulier in, zodat de technieker weet wat er moet gebeuren.
+            Ja, in de shop van <strong>Matubu Coffee Roastery in Dudzele</strong> (Dorpsplein 17, Brugge) op woensdag, donderdag, zaterdag en zondag van 10:00 tot 18:00. In de andere afgiftepunten (Pathoekeweg in Brugge, Keizer Karelstraat en Muide in Gent, en Gentbrugge) werken we op afspraak. Vul in elk geval eerst het aanvraagformulier in, zodat de technieker weet wat er moet gebeuren.
           </div>
         </div>
       </div>
@@ -1806,6 +1832,7 @@
           <li><a href="#afgifte">Brugge · Matubu Coffee Roastery</a></li>
           <li><a href="#afgifte">Brugge · Pathoekeweg</a></li>
           <li><a href="#afgifte">Gent · Keizer Karelstraat</a></li>
+          <li><a href="#afgifte">Gent · Muide</a></li>
           <li><a href="#afgifte">Gentbrugge</a></li>
         </ul>
       </div>
@@ -1845,8 +1872,8 @@
     <div class="footer-bottom">
       <p>© 2026 Bean &amp; Beyond BV — BE 1001.972.089 — Alle rechten voorbehouden — Powered by <a href="https://matubucoffee.be" target="_blank" style="color:var(--orange);text-decoration:none;">Matubu Coffee Roastery</a></p>
       <div style="display:flex;gap:16px;">
-        <a href="#">Privacybeleid</a>
-        <a href="#">Algemene voorwaarden</a>
+        <a href="/privacybeleid/">Privacybeleid</a>
+        <a href="/algemene-voorwaarden/">Algemene voorwaarden</a>
       </div>
     </div>
   </div>
@@ -1864,6 +1891,8 @@
       popup: '<strong>Brugge · Pathoekeweg</strong><br>Op afspraak' },
     { pos: [51.0505, 3.7345], label: 'Keizer Karelstraat', color: '#0D9488', dir: 'left',
       popup: '<strong>Gent · Keizer Karelstraat</strong><br>Op afspraak' },
+    { pos: [51.0720, 3.7340], label: 'Muide', color: '#2563EB', dir: 'top',
+      popup: '<strong>Gent · Muide</strong><br>Op afspraak' },
     { pos: [51.0395, 3.7630], label: 'Gentbrugge', color: '#DB2777', dir: 'right',
       popup: '<strong>Gentbrugge</strong><br>Op afspraak' },
   ];
@@ -1886,13 +1915,13 @@
       .addTo(map)
       .bindPopup(p.popup)
       .bindTooltip('<span style="--c:' + p.color + '">' + p.label + '</span>', {
-        permanent: true, direction: p.dir, className: 'pin-label', offset: [p.dir === 'left' ? -16 : 16, 0],
+        permanent: true, direction: p.dir, className: 'pin-label', offset: p.dir === 'top' ? [0, -6] : [p.dir === 'left' ? -16 : 16, 0],
       });
   });
   const ZOOMS = {
     all: L.latLngBounds(LOCS.map(p => p.pos)),
     brugge: L.latLngBounds([LOCS[0].pos, LOCS[1].pos]),
-    gent: L.latLngBounds([LOCS[2].pos, LOCS[3].pos]),
+    gent: L.latLngBounds([LOCS[2].pos, LOCS[3].pos, LOCS[4].pos]),
   };
   map.fitBounds(ZOOMS.all, { padding: [70, 70] });
 
@@ -2042,7 +2071,7 @@
         if (val('naam').length < 2) return fail('Vul je naam in.', form.elements.naam);
         if (val('tel').replace(/[^0-9+]/g, '').length < 9) return fail('Vul een geldig telefoonnummer in.', form.elements.tel);
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val('email'))) return fail('Vul een geldig e-mailadres in.', form.elements.email);
-        if (!document.getElementById('akkoord').checked) return fail('Vink aan dat je begrijpt dat enkel de problemen in je lijst hersteld worden.');
+        if (!document.getElementById('akkoord').checked) return fail('Vink aan dat je akkoord gaat: enkel de problemen in je lijst worden hersteld, volgens de algemene voorwaarden.');
       }
       return true;
     }
@@ -2143,7 +2172,7 @@
   "name": "Fixmijnkoffiemachine.be",
   "legalName": "Bean & Beyond BV",
   "taxID": "BE 1001.972.089",
-  "description": "Herstelling en onderhoud van volautomatische koffiemachines en Nespresso-toestellen. Klanten brengen hun machine binnen in Brugge (Matubu Coffee Roastery, Dudzele, of Pathoekeweg), Gent (Keizer Karelstraat) of Gentbrugge. Geen herstellingen aan huis. Vast tarief: €75 incl. btw voor diagnose en eerste uur werk, daarna €60 per uur.",
+  "description": "Herstelling en onderhoud van volautomatische koffiemachines en Nespresso-toestellen. Klanten brengen hun machine binnen in Brugge (Matubu Coffee Roastery, Dudzele, of Pathoekeweg), Gent (Keizer Karelstraat of Muide) of Gentbrugge. Geen herstellingen aan huis. Vast tarief: €75 incl. btw voor diagnose en eerste uur werk, daarna €60 per uur.",
   "url": "https://fixmijnkoffiemachine.com/",
   "image": "https://fixmijnkoffiemachine.com/og-image.png",
   "logo": "https://fixmijnkoffiemachine.com/apple-touch-icon.png",
@@ -2198,7 +2227,15 @@
       "name": "Hoeveel kost een reparatie in totaal?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Elke herstelling start met een vast tarief van €75 incl. BTW. Daarin zitten de diagnose én het eerste uur werk. Duurt de reparatie langer, dan rekenen we €60 per bijkomend uur. Wisselstukken zijn apart en worden nooit geplaatst zonder uw goedkeuring op prijs."
+        "text": "Elke herstelling start met een vast tarief van €75 incl. BTW. Daarin zitten de diagnose én het eerste uur werk. Duurt de reparatie langer, dan rekenen we €60 per bijkomend uur. Wisselstukken zijn apart en worden nooit geplaatst zonder uw goedkeuring op prijs. Een gemiddelde herstelling kost in totaal tussen €150 en €200; het kan minder zijn, of meer als er grotere onderdelen nodig zijn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat kost een gemiddelde herstelling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een gemiddelde herstelling kost in totaal tussen €150 en €200 (incl. btw). Dat is een richtprijs: een eenvoudige herstelling kan minder kosten, en als er grotere onderdelen nodig zijn, zoals een pomp of een zetgroep, kan het ook meer zijn. Je betaalt €75 voor de diagnose en het eerste uur werk, €60 per bijkomend uur en eventuele onderdelen. Onderdelen plaatsen we nooit zonder jouw akkoord op de prijs, dus je weet altijd vooraf waar je aan toe bent."
       }
     },
     {
@@ -2214,7 +2251,7 @@
       "name": "Komen jullie ook aan huis?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. Alle herstellingen gebeuren in ons atelier. Je brengt je machine binnen zonder afspraak bij Matubu Coffee Roastery, shop Dudzele (Brugge) op woensdag, donderdag, zaterdag en zondag van 10 tot 18 uur, of op afspraak in Brugge (Pathoekeweg), Gent (Keizer Karelstraat) of Gentbrugge. Een leenmachine is beschikbaar tegen betaling; de prijs hangt af van de machine en de duur."
+        "text": "Nee. Alle herstellingen gebeuren in ons atelier. Je brengt je machine binnen zonder afspraak bij Matubu Coffee Roastery, shop Dudzele (Brugge) op woensdag, donderdag, zaterdag en zondag van 10 tot 18 uur, of op afspraak in Brugge (Pathoekeweg), Gent (Keizer Karelstraat of Muide) of Gentbrugge. Een leenmachine is beschikbaar tegen betaling; de prijs hangt af van de machine en de duur."
       }
     },
     {
@@ -2262,7 +2299,7 @@
       "name": "Kan ik mijn machine binnenbrengen zonder afspraak?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, in de shop van Matubu Coffee Roastery in Dudzele (Dorpsplein 17, Brugge) op woensdag, donderdag, zaterdag en zondag van 10:00 tot 18:00. In de andere afgiftepunten (Pathoekeweg in Brugge, Keizer Karelstraat in Gent en Gentbrugge) werken we op afspraak. Vul in elk geval eerst het aanvraagformulier in, zodat de technieker weet wat er moet gebeuren."
+        "text": "Ja, in de shop van Matubu Coffee Roastery in Dudzele (Dorpsplein 17, Brugge) op woensdag, donderdag, zaterdag en zondag van 10:00 tot 18:00. In de andere afgiftepunten (Pathoekeweg in Brugge, Keizer Karelstraat en Muide in Gent, en Gentbrugge) werken we op afspraak. Vul in elk geval eerst het aanvraagformulier in, zodat de technieker weet wat er moet gebeuren."
       }
     },
     {
@@ -2448,12 +2485,12 @@
   const FORM_URL = 'https://fixmijnkoffiemachine.com/#contact';
   const KB = [
     { id: 'prijs', q: 'Wat kost een herstelling?',
-      k: ['kost', 'kosten', 'prijs', 'prijzen', 'tarief', 'tarieven', 'euro', 'eur', 'hoeveel', 'betalen', 'goedkoop', 'duur is', 'offerte', 'uurloon', '75', '60'],
-      a: 'Elke herstelling start aan €75 incl. btw. Daarin zitten de diagnose en het eerste uur werk. Duurt het langer, dan is het €60 per bijkomend uur.\nWisselstukken komen er apart bij, en die plaatsen we nooit zonder jouw akkoord op de prijs.',
+      k: ['kost', 'kosten', 'prijs', 'prijzen', 'tarief', 'tarieven', 'euro', 'eur', 'hoeveel', 'betalen', 'goedkoop', 'duur is', 'offerte', 'uurloon', '75', '60', 'gemiddeld', 'gemiddelde', 'gemiddelde prijs', 'ongeveer', 'richtprijs', 'in totaal', 'totaalprijs', 'schatting', 'budget', 'prijsindicatie'],
+      a: 'Een gemiddelde herstelling kost in totaal tussen €150 en €200 (incl. btw). Dat is een richtprijs: een eenvoudige herstelling kan minder kosten, en als er grotere onderdelen nodig zijn, kan het ook meer zijn.\nZo is de prijs opgebouwd: €75 voor de diagnose en het eerste uur werk, €60 per bijkomend uur, en eventuele onderdelen. Onderdelen plaatsen we nooit zonder jouw akkoord op de prijs.',
       next: ['onderdelen', 'leenmachine', 'aanvragen'] },
     { id: 'afgifte', q: 'Waar kan ik mijn machine binnenbrengen?',
       k: ['waar', 'binnenbrengen', 'binnen brengen', 'afgeven', 'afgifte', 'brengen', 'adres', 'locatie', 'locaties', 'gent', 'brugge', 'gentbrugge', 'dudzele', 'pathoekeweg', 'keizer karel', 'atelier', 'winkel'],
-      a: 'Je kan je machine binnenbrengen op 4 plaatsen:\n- Brugge, Matubu Coffee Roastery (shop Dudzele, Dorpsplein 17): zonder afspraak op wo, do, za en zo van 10:00 tot 18:00\n- Brugge, Pathoekeweg: op afspraak\n- Gent, Keizer Karelstraat: op afspraak\n- Gentbrugge: op afspraak\nHet exacte adres van de punten op afspraak krijg je bij de bevestiging van je aanvraag.',
+      a: 'Je kan je machine binnenbrengen op 5 plaatsen:\n- Brugge, Matubu Coffee Roastery (shop Dudzele, Dorpsplein 17): zonder afspraak op wo, do, za en zo van 10:00 tot 18:00\n- Brugge, Pathoekeweg: op afspraak\n- Gent, Keizer Karelstraat: op afspraak\n- Gent, Muide: op afspraak\n- Gentbrugge: op afspraak\nHet exacte adres van de punten op afspraak krijg je bij de bevestiging van je aanvraag.',
       next: ['uren', 'aanvragen', 'aanhuis'] },
     { id: 'aanhuis', q: 'Komen jullie aan huis?',
       k: ['aan huis', 'thuis', 'langs', 'langskomen', 'langs komen', 'ter plaatse', 'verplaatsing', 'verplaatsen', 'ophalen', 'oppikken', 'komen jullie', 'kom je', 'technieker langs'],
@@ -2485,7 +2522,7 @@
       next: ['aanvragen', 'watinvullen'], cta: true },
     { id: 'uren', q: 'Wanneer kan ik bij Matubu terecht?',
       k: ['open', 'openingsuren', 'openingsuur', 'uren', 'wanneer open', 'wanneer kan ik', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag', 'zondag', 'weekend', 'gesloten'],
-      a: 'In de shop van Matubu Coffee Roastery in Dudzele (Dorpsplein 17) kan je zonder afspraak terecht:\n- woensdag, donderdag, zaterdag en zondag: 10:00 tot 18:00\n- maandag, dinsdag en vrijdag: gesloten\nDe andere afgiftepunten (Pathoekeweg, Keizer Karelstraat en Gentbrugge) werken op afspraak.',
+      a: 'In de shop van Matubu Coffee Roastery in Dudzele (Dorpsplein 17) kan je zonder afspraak terecht:\n- woensdag, donderdag, zaterdag en zondag: 10:00 tot 18:00\n- maandag, dinsdag en vrijdag: gesloten\nDe andere afgiftepunten (Pathoekeweg, Keizer Karelstraat, Muide en Gentbrugge) werken op afspraak.',
       next: ['afgifte', 'aanvragen'] },
     { id: 'doorlooptijd', q: 'Hoe lang duurt een herstelling?',
       k: ['hoe lang', 'lang', 'duurt', 'duur het', 'termijn', 'wanneer klaar', 'klaar', 'machine klaar', 'terug', 'terugkrijgen', 'doorlooptijd', 'snel', 'dagen', 'weken', 'wachttijd', 'spoed', 'dringend'],
@@ -2513,7 +2550,7 @@
       next: ['prijs', 'waard', 'aanvragen'] },
     { id: 'zonderafspraak', q: 'Kan ik binnenkomen zonder afspraak?',
       k: ['zonder afspraak', 'gewoon langskomen', 'binnenwandelen', 'binnenlopen', 'direct binnenbrengen', 'vandaag binnenbrengen', 'morgen binnenbrengen'],
-      a: 'Ja, in de shop van Matubu Coffee Roastery in Dudzele (Dorpsplein 17, Brugge): woensdag, donderdag, zaterdag en zondag van 10:00 tot 18:00.\nDe andere afgiftepunten (Pathoekeweg, Keizer Karelstraat en Gentbrugge) werken op afspraak.\nVul wel eerst het formulier in, zodat de technieker weet wat er moet gebeuren: ' + FORM_URL,
+      a: 'Ja, in de shop van Matubu Coffee Roastery in Dudzele (Dorpsplein 17, Brugge): woensdag, donderdag, zaterdag en zondag van 10:00 tot 18:00.\nDe andere afgiftepunten (Pathoekeweg, Keizer Karelstraat, Muide en Gentbrugge) werken op afspraak.\nVul wel eerst het formulier in, zodat de technieker weet wat er moet gebeuren: ' + FORM_URL,
       next: ['meebrengen', 'afgifte', 'doorlooptijd'], cta: true },
     { id: 'meebrengen', q: 'Wat moet ik meebrengen?',
       k: ['meebrengen', 'meenemen', 'mee brengen', 'wat breng ik', 'reservoir', 'lekbak', 'koffiedikbak', 'toebehoren', 'accessoires', 'verpakking', 'doos'],
