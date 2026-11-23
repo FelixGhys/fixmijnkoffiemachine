@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>fixmijnkoffiemachine.be | Reparatie & Onderhoud in Oost- & West-Vlaanderen</title>
-  <meta name="description" content="Volautomaat kapot? Wij repareren volautomatische koffiemachines in Oost- en West-Vlaanderen. Jura, De'Longhi, Philips, Saeco, Siemens en meer. Vast tarief €75 incl. BTW." />
+  <title>fixmijnkoffiemachine.be | Koffiemachine reparatie in Brugge & Gent</title>
+  <meta name="description" content="Volautomaat kapot? Breng je koffiemachine binnen in Brugge, Gent of Gentbrugge. Jura, De'Longhi, Philips, Saeco, Siemens en meer. Vast tarief €75 incl. BTW." />
   <meta name="keywords" content="volautomaat reparatie, koffiemachine reparatie, Jura reparatie, DeLonghi reparatie, Philips Saeco reparatie, Siemens reparatie, Brugge, West-Vlaanderen, Oost-Vlaanderen" />
 
   <!-- Favicon -->
@@ -20,8 +20,8 @@
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://fixmijnkoffiemachine.com" />
-  <meta property="og:title" content="Fixmijnkoffiemachine.be | Volautomaat reparatie in Oost- & West-Vlaanderen" />
-  <meta property="og:description" content="Volautomaat kapot? Jura, De'Longhi, Philips, Saeco, Siemens en meer. Snel ter plaatse vanuit Brugge. Vast tarief €75 incl. BTW." />
+  <meta property="og:title" content="Fixmijnkoffiemachine.be | Volautomaat reparatie in Brugge & Gent" />
+  <meta property="og:description" content="Volautomaat kapot? Jura, De'Longhi, Philips, Saeco, Siemens en meer. Breng je machine binnen in Brugge of Gent. Vast tarief €75 incl. BTW." />
   <meta property="og:image" content="https://fixmijnkoffiemachine.be/hero-bg.jpg" />
   <meta property="og:locale" content="nl_BE" />
 
@@ -614,47 +614,6 @@
     .box-oost { background: rgba(91,200,245,.5); border: 2px solid #5BC8F5; }
     .box-base { background: var(--orange); border-radius: 50%; width: 14px; height: 14px; }
 
-    /* === REVIEWS === */
-    .reviews-header { margin-bottom: 48px; }
-    .stars-row {
-      display: flex;
-      gap: 4px;
-      margin-bottom: 8px;
-    }
-    .star { color: #F59E0B; font-size: 1.1rem; }
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-    .review-card {
-      background: var(--white);
-      border: 1px solid var(--gray-200);
-      border-radius: 16px;
-      padding: 24px;
-      transition: box-shadow .25s;
-    }
-    .review-card:hover { box-shadow: var(--shadow); }
-    .review-stars { display: flex; gap: 3px; margin-bottom: 12px; }
-    .review-stars .star { font-size: .95rem; }
-    .review-text { font-size: .9rem; color: var(--gray-800); line-height: 1.65; margin-bottom: 16px; font-style: italic; }
-    .review-author { display: flex; align-items: center; gap: 12px; }
-    .review-avatar {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: var(--blue);
-      color: var(--white);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: .9rem;
-      flex-shrink: 0;
-    }
-    .review-name { font-weight: 600; font-size: .88rem; }
-    .review-location { font-size: .8rem; color: var(--gray-600); }
-
     /* === FAQ === */
     .faq-bg { background: var(--gray-50); }
     .faq-list { max-width: 760px; margin: 48px auto 0; }
@@ -853,8 +812,57 @@
       transition: transform .2s, box-shadow .2s;
     }
     .float-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 28px rgba(0,0,0,.3); }
-    .float-call { background: var(--blue); color: var(--white); }
-    .float-wa { background: #25D366; color: var(--white); }
+    .float-form { background: var(--orange); color: var(--white); }
+
+    /* === AFGIFTEPUNTEN === */
+    .afgifte-list li {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    .afgifte-list li:last-child { border-bottom: none; }
+    .afgifte-name { font-weight: 700; color: var(--white); font-size: .95rem; display: flex; align-items: center; gap: 10px; }
+    .afgifte-addr { font-size: .85rem; color: rgba(255,255,255,.7); margin: 2px 0 0 18px; }
+    .afgifte-when { font-size: .8rem; color: var(--orange); font-weight: 600; margin: 2px 0 0 18px; }
+    .afgifte-when a { text-decoration: underline; }
+    .afgifte-note {
+      margin-top: 20px; padding: 16px; background: rgba(255,255,255,.07);
+      border-radius: 12px; font-size: .88rem; color: rgba(255,255,255,.8);
+    }
+
+    /* === FORMULIER EXTRA === */
+    .form-hint { font-size: .8rem; color: var(--gray-600); margin: -2px 0 8px; }
+    .choice-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .form-group .choice {
+      display: flex; gap: 10px; align-items: flex-start; margin: 0;
+      padding: 12px 14px; border: 1.5px solid var(--gray-200); border-radius: var(--radius);
+      cursor: pointer; transition: border-color .2s, background .2s;
+    }
+    .choice:hover { border-color: var(--gray-400); }
+    .choice input { width: auto; margin-top: 3px; accent-color: var(--orange); flex-shrink: 0; }
+    .choice strong { display: block; font-size: .88rem; color: var(--blue); }
+    .choice span { display: block; font-size: .78rem; color: var(--gray-600); line-height: 1.4; }
+    .choice:has(input:checked) { border-color: var(--orange); background: rgba(232,98,10,.06); }
+    .check-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 16px; }
+    .form-group .check-grid label, .form-check, .form-group .form-check {
+      display: flex; gap: 8px; align-items: flex-start;
+      font-size: .87rem; font-weight: 500; color: var(--gray-800); cursor: pointer; margin: 0;
+    }
+    .check-grid input, .form-check input { width: auto; margin-top: 4px; accent-color: var(--orange); flex-shrink: 0; }
+    .form-alert {
+      background: rgba(232,98,10,.08); border-left: 4px solid var(--orange);
+      border-radius: 8px; padding: 12px 14px; font-size: .85rem; color: var(--gray-800);
+      line-height: 1.55; margin-bottom: 12px;
+    }
+    .form-alert strong { color: var(--orange); }
+    .form-consent { background: var(--gray-50); border-radius: var(--radius); padding: 14px; margin-bottom: 16px; }
+    .form-error { margin-top: 12px; font-size: .88rem; color: #dc2626; display: none; }
+    .why-form {
+      margin-top: 28px; background: var(--gray-50); border-radius: 12px; padding: 20px;
+      font-size: .88rem; color: var(--gray-600); line-height: 1.65;
+    }
+    .why-form h4 { font-size: .92rem; font-weight: 700; color: var(--blue); margin-bottom: 8px; }
+    .why-form li { padding-left: 18px; position: relative; margin-top: 6px; }
+    .why-form li::before { content: '✓'; position: absolute; left: 0; color: var(--orange); font-weight: 700; }
 
     /* === RESPONSIVE === */
     @media (max-width: 1024px) {
@@ -880,9 +888,10 @@
       .flow-arrow-icon { transform: rotate(90deg); }
       .map-layout { grid-template-columns: 1fr; }
       .map-wrapper { height: 300px; }
-      .reviews-grid { grid-template-columns: 1fr; }
       .contact-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
+      .choice-grid, .check-grid { grid-template-columns: 1fr; }
+      .contact-form-wrap { padding: 24px 18px; }
       .footer-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 600px) {
@@ -903,11 +912,8 @@
 
 <!-- === FLOATING CTA === -->
 <div class="float-cta">
-  <a href="tel:+32475206236" class="float-btn float-call">
-    📞 Bel nu
-  </a>
-  <a href="https://wa.me/32475206236" class="float-btn float-wa" target="_blank">
-    💬 WhatsApp
+  <a href="#contact" class="float-btn float-form">
+    Reparatie aanvragen
   </a>
 </div>
 
@@ -921,11 +927,11 @@
       <li><a href="#diensten">Diensten</a></li>
       <li><a href="#hoe">Hoe het werkt</a></li>
       <li><a href="#prijzen">Prijzen</a></li>
-      <li><a href="#zone">Servicegebied</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#afgifte">Afgiftepunten</a></li>
+      <li><a href="#contact">Aanvragen</a></li>
     </ul>
-    <a href="tel:+32475206236" class="nav-phone">
-      Bel ons direct
+    <a href="#contact" class="nav-phone">
+      Reparatie aanvragen
     </a>
     <button class="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -938,23 +944,24 @@
   <div class="container">
     <div class="hero-content">
       <div class="hero-label">
-        <span>✓</span> Volautomaat specialist · Oost- &amp; West-Vlaanderen
+        <span>✓</span> Volautomaat specialist · Brugge &amp; Gent
       </div>
       <h1>
         Koffiemachine kapot?<br/>
-        <span class="accent">Snel &amp; vakkundig</span> hersteld.
+        <span class="accent">Breng ze binnen</span>, wij herstellen.
       </h1>
       <ul class="hero-checks">
         <li>✓ Jura · De'Longhi · Philips · Saeco · Siemens en meer</li>
+        <li>✓ Afgifte in Brugge, Gent of Gentbrugge</li>
         <li>✓ Vaste tarieven, geen verrassingen achteraf</li>
-        <li>✓ Vervangmachine beschikbaar indien nodig</li>
+        <li>✓ Leenmachine beschikbaar (betalend)</li>
       </ul>
       <div class="hero-ctas">
         <a href="#contact" class="btn btn-primary">
-          📋 Maak een afspraak
+          Reparatie aanvragen
         </a>
-        <a href="tel:+32475206236" class="btn btn-outline">
-          📞 Bel direct: 0475 20 62 36
+        <a href="#afgifte" class="btn btn-outline">
+          Bekijk de afgiftepunten
         </a>
       </div>
     </div>
@@ -963,20 +970,20 @@
       <div class="hero-card">
         <p class="hero-card-title">Transparante tarieven</p>
         <div class="price-row">
-          <span class="price-label">Verplaatsing + 1e uur werk</span>
+          <span class="price-label">Diagnose + 1e uur werk</span>
           <span class="price-val">€75</span>
         </div>
         <div class="price-row">
-          <span class="price-label">Reparatie (per uur)</span>
+          <span class="price-label">Per bijkomend uur</span>
           <span class="price-val">€60</span>
         </div>
         <div class="price-row">
-          <span class="price-label">Vervangmachine</span>
-          <span class="price-val">Op aanvraag</span>
+          <span class="price-label">Leenmachine (betalend)</span>
+          <span class="price-val">Prijs op aanvraag</span>
         </div>
         <p class="hero-card-note">Alle prijzen incl. BTW · Excl. wisselstukken</p>
         <p class="hero-card-note" style="margin-top:4px;">Geen enkel stuk geplaatst zonder uw goedkeuring</p>
-        <a href="#contact" class="hero-card-cta">Afspraak inplannen &rarr;</a>
+        <a href="#contact" class="hero-card-cta">Reparatie aanvragen &rarr;</a>
       </div>
     </div>
   </div>
@@ -991,13 +998,13 @@
     </div>
     <div class="trust-divider"></div>
     <div class="trust-item">
-      <div class="trust-icon">⚡</div>
-      <div class="trust-text"><strong>Snel ter plaatse</strong></div>
+      <div class="trust-icon">📍</div>
+      <div class="trust-text"><strong>Afgifte Brugge &amp; Gent</strong></div>
     </div>
     <div class="trust-divider"></div>
     <div class="trust-item">
       <div class="trust-icon">🔄</div>
-      <div class="trust-text"><strong>Vervangmachine</strong></div>
+      <div class="trust-text"><strong>Leenmachine</strong></div>
     </div>
     <div class="trust-divider"></div>
     <div class="trust-item">
@@ -1018,7 +1025,7 @@
       <div class="dienst-card">
         <div class="dienst-icon">🔧</div>
         <h3>Reparatie volautomaat</h3>
-        <p>Geen koffie meer, vreemde geluiden, lekkage of foutcodes? We diagnosticeren en repareren ter plaatse. Jura, De'Longhi, Philips, Saeco, Siemens, Miele, WMF, Krups, Technicup, Dr. Coffee en meer.</p>
+        <p>Geen koffie meer, vreemde geluiden, lekkage of foutcodes? Breng je machine binnen, wij diagnosticeren en herstellen ze in ons atelier. Jura, De'Longhi, Philips, Saeco, Siemens, Miele, WMF, Krups, Technicup, Dr. Coffee en meer.</p>
         <a href="#contact" class="dienst-link">Probleem melden →</a>
       </div>
       <div class="dienst-card">
@@ -1035,14 +1042,14 @@
       </div>
       <div class="dienst-card">
         <div class="dienst-icon">🔄</div>
-        <h3>Vervangmachine</h3>
-        <p>Duurt de reparatie langer? Wij installeren tijdelijk een vervangmachine zodat jij of jouw zaak nooit zonder koffie valt.</p>
-        <a href="#contact" class="dienst-link">Meer info →</a>
+        <h3>Leenmachine</h3>
+        <p>Kan je niet zonder koffie tijdens de herstelling? Huur een leenmachine en neem ze mee wanneer je jouw toestel binnenbrengt. Betalend, prijs afhankelijk van machine en duur.</p>
+        <a href="#contact" class="dienst-link">Leenmachine aanvragen →</a>
       </div>
       <div class="dienst-card">
         <div class="dienst-icon">🏢</div>
         <h3>B2B service</h3>
-        <p>Koffiemachine in kantoor, restaurant of hotel? Wij bieden snelle interventie en onderhoudscontracten op maat voor professionele omgevingen.</p>
+        <p>Koffiemachine in kantoor, restaurant of hotel? Wij bieden vlotte herstellingen en onderhoudscontracten op maat voor professionele omgevingen.</p>
         <a href="#contact" class="dienst-link">Offerte aanvragen →</a>
       </div>
       <div class="dienst-card">
@@ -1065,23 +1072,23 @@
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
-        <h3>Neem contact op</h3>
-        <p>Bel, WhatsApp of vul ons formulier in. Beschrijf het probleem of stuur een foto van je machine.</p>
+        <h3>Vul het formulier in</h3>
+        <p>Kies je afgiftepunt en noteer <strong>elk probleem</strong> dat je opgelost wil zien. Enkel wat op het formulier staat, wordt hersteld.</p>
       </div>
       <div class="step">
         <div class="step-num">2</div>
-        <h3>Afspraak inplannen</h3>
-        <p>We plannen snel een moment dat past — ook avond of weekend op aanvraag.</p>
+        <h3>Machine binnenbrengen</h3>
+        <p>Wij nemen contact met je op en bevestigen wanneer je de machine kan binnenbrengen.</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
         <h3>Diagnose &amp; reparatie</h3>
-        <p>Onze technicus komt ter plaatse, stelt de diagnose en repareert. Je krijgt vooraf een prijsbevestiging.</p>
+        <p>De technieker werkt jouw lijst met problemen af. Is er meer nodig dan voorzien, dan vragen we eerst je akkoord.</p>
       </div>
       <div class="step">
         <div class="step-num">4</div>
-        <h3>Koffie genieten</h3>
-        <p>Machine klaar? Dan vertrekken we pas. Kan het niet direct? Dan installeren we een vervangmachine.</p>
+        <h3>Ophalen &amp; genieten</h3>
+        <p>We laten weten wanneer je machine klaar is. Je haalt ze op waar je ze binnenbracht.</p>
       </div>
     </div>
   </div>
@@ -1099,12 +1106,12 @@
       <!-- Stap 1 -->
       <div class="flow-card">
         <div class="flow-step-num">1</div>
-        <h3>Verplaatsing &amp; eerste uur</h3>
-        <p class="desc">Standaard starttarief bij elk bezoek. Verplaatsing én het eerste uur werk zijn hierin inbegrepen.</p>
+        <h3>Diagnose &amp; eerste uur</h3>
+        <p class="desc">Standaard starttarief per herstelling. De diagnose én het eerste uur werk zijn hierin inbegrepen.</p>
         <div class="flow-amount"><sup>€</sup>75 <span class="unit">incl. BTW</span></div>
-        <p class="flow-note">Per interventie · heel Oost- &amp; West-Vlaanderen</p>
+        <p class="flow-note">Per machine · binnengebracht in Brugge of Gent</p>
         <ul class="flow-features">
-          <li><span class="check">✓</span> Verplaatsing inbegrepen</li>
+          <li><span class="check">✓</span> Diagnose inbegrepen</li>
           <li><span class="check">✓</span> Eerste uur werk inbegrepen</li>
           <li><span class="check">✓</span> Prijsbevestiging voor aanvang</li>
         </ul>
@@ -1138,14 +1145,14 @@
       <div class="flow-card optional">
         <div class="flow-optional-badge">Indien nodig</div>
         <div class="flow-step-num">3</div>
-        <h3>Vervangmachine</h3>
-        <p class="desc">Kan de machine niet dezelfde dag hersteld worden? Wij installeren tijdelijk een kwalitatieve vervangmachine.</p>
-        <div class="flow-amount" style="font-size:1.5rem;margin-top:4px;">Op aanvraag</div>
-        <p class="flow-note">Prijs afhankelijk van machine &amp; duur</p>
+        <h3>Leenmachine</h3>
+        <p class="desc">Kan je niet zonder koffie tijdens de herstelling? Neem bij het binnenbrengen een leenmachine mee, tegen betaling.</p>
+        <div class="flow-amount" style="font-size:1.5rem;margin-top:4px;">Prijs op aanvraag</div>
+        <p class="flow-note">Betalend · prijs afhankelijk van machine &amp; duur</p>
         <ul class="flow-features">
-          <li><span class="check">✓</span> Tijdelijke installatie</li>
+          <li><span class="check">✓</span> Meenemen bij afgifte</li>
           <li><span class="check">✓</span> Nooit zonder koffie</li>
-          <li><span class="check">✓</span> Inclusief instellingen</li>
+          <li><span class="check">✓</span> Aan te vragen in het formulier</li>
         </ul>
       </div>
 
@@ -1153,73 +1160,53 @@
 
     <div style="text-align:center;margin-top:36px;">
       <a href="#contact" class="btn btn-primary" style="font-size:1rem;padding:16px 36px;">
-        📋 Maak een afspraak
+        Reparatie aanvragen
       </a>
       <p style="margin-top:12px;font-size:.85rem;color:var(--gray-600);">Alle prijzen incl. BTW · Excl. wisselstukken · Geen enkel stuk geplaatst zonder uw goedkeuring op prijs</p>
     </div>
   </div>
 </section>
 
-<!-- === KAART / SERVICEGEBIED === -->
-<section class="section map-bg" id="zone">
+<!-- === AFGIFTEPUNTEN === -->
+<section class="section map-bg" id="afgifte">
   <div class="container">
-    <div class="badge" style="background:rgba(232,98,10,.12);color:#E8620A;">Servicegebied</div>
-    <h2 class="section-title">Actief in Oost- &amp; West-Vlaanderen</h2>
-    <p class="section-sub">Gevestigd in Brugge, snel bereikbaar in de hele regio.</p>
+    <div class="badge" style="background:rgba(232,98,10,.12);color:#E8620A;">Afgiftepunten</div>
+    <h2 class="section-title">Breng je machine binnen</h2>
+    <p class="section-sub">We komen niet aan huis: alle herstellingen gebeuren in ons atelier. Je kiest zelf waar je je machine binnenbrengt en ophaalt.</p>
 
     <div class="map-layout">
       <div class="zone-info">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 16px;">
-          <div>
-            <h3>West-Vlaanderen</h3>
-            <ul class="zone-list">
-              <li><div class="zone-dot west"></div>Brugge ★</li>
-              <li><div class="zone-dot west"></div>Kortrijk</li>
-              <li><div class="zone-dot west"></div>Roeselare</li>
-              <li><div class="zone-dot west"></div>Oostende</li>
-              <li><div class="zone-dot west"></div>Ieper</li>
-              <li><div class="zone-dot west"></div>Veurne</li>
-              <li><div class="zone-dot west"></div>Torhout</li>
-              <li><div class="zone-dot west"></div>Tielt</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Oost-Vlaanderen</h3>
-            <ul class="zone-list">
-              <li><div class="zone-dot oost"></div>Gent</li>
-              <li><div class="zone-dot oost"></div>Aalst</li>
-              <li><div class="zone-dot oost"></div>Sint-Niklaas</li>
-              <li><div class="zone-dot oost"></div>Dendermonde</li>
-              <li><div class="zone-dot oost"></div>Oudenaarde</li>
-              <li><div class="zone-dot oost"></div>Ronse</li>
-              <li><div class="zone-dot oost"></div>Eeklo</li>
-              <li><div class="zone-dot oost"></div>Zelzate</li>
-            </ul>
-          </div>
-        </div>
+        <ul class="afgifte-list">
+          <li>
+            <div class="afgifte-name"><div class="zone-dot west"></div>Matubu Coffee Roastery</div>
+            <div class="afgifte-addr">Dorpsplein 17, 8380 Brugge (Dudzele)</div>
+            <div class="afgifte-when">Tijdens de openingsuren · <a href="https://matubucoffee.be/pages/contact-opnemen" target="_blank" rel="noopener">bekijk openingsuren</a></div>
+          </li>
+          <li>
+            <div class="afgifte-name"><div class="zone-dot west"></div>Brugge · Pathoekeweg</div>
+            <div class="afgifte-addr">Pathoekeweg, 8000 Brugge</div>
+            <div class="afgifte-when">Op afspraak</div>
+          </li>
+          <li>
+            <div class="afgifte-name"><div class="zone-dot oost"></div>Gent · Keizer Karelstraat</div>
+            <div class="afgifte-addr">Keizer Karelstraat, 9000 Gent</div>
+            <div class="afgifte-when">Op afspraak</div>
+          </li>
+          <li>
+            <div class="afgifte-name"><div class="zone-dot oost"></div>Gentbrugge</div>
+            <div class="afgifte-addr">9050 Gentbrugge</div>
+            <div class="afgifte-when">Op afspraak</div>
+          </li>
+        </ul>
 
-        <div style="margin-top:24px;padding:16px;background:rgba(255,255,255,.07);border-radius:12px;font-size:.88rem;color:rgba(255,255,255,.7);">
-          💬 Woon je buiten onze zone? Neem toch contact op — we zoeken altijd naar een oplossing.
+        <div class="afgifte-note">
+          Het exacte adres van de afgiftepunten op afspraak krijg je bij de bevestiging van je aanvraag.
         </div>
       </div>
 
       <div>
         <div class="map-wrapper">
           <div id="map"></div>
-        </div>
-        <div class="map-legend">
-          <div class="legend-item">
-            <div class="legend-box box-west"></div>
-            West-Vlaanderen
-          </div>
-          <div class="legend-item">
-            <div class="legend-box box-oost"></div>
-            Oost-Vlaanderen
-          </div>
-          <div class="legend-item">
-            <div class="legend-box box-base"></div>
-            Uitvalsbasis Brugge
-          </div>
         </div>
       </div>
     </div>
@@ -1230,60 +1217,11 @@
 <section class="section" id="reviews">
   <div class="container">
     <div class="badge">Wat klanten zeggen</div>
-    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:48px;">
-      <div>
-        <h2 class="section-title" style="margin-bottom:8px;">Beoordelingen</h2>
-        <div class="stars-row">
-          <span class="star">★</span><span class="star">★</span><span class="star">★</span>
-          <span class="star">★</span><span class="star">★</span>
-          <strong style="margin-left:8px;font-size:.95rem;">4.9 / 5</strong>
-        </div>
-      </div>
-    </div>
+    <h2 class="section-title" style="margin-bottom:32px;">Beoordelingen</h2>
 
-    <div class="reviews-grid">
-      <div class="review-card">
-        <div class="review-stars">
-          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-        </div>
-        <p class="review-text">"Mijn Jura gaf al weken een foutmelding. Zelfde dag nog langs geweest, probleem opgelost. Eerlijk advies en nette prijs. Zeker aanbevolen!"</p>
-        <div class="review-author">
-          <div class="review-avatar">PD</div>
-          <div>
-            <div class="review-name">Peter D.</div>
-            <div class="review-location">Brugge</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="review-card">
-        <div class="review-stars">
-          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-        </div>
-        <p class="review-text">"Onze Delonghi op kantoor was kapot midden in de week. Binnen 2 dagen vervangmachine gehad en dan ook nog eens gerepareerd teruggebracht. Top service!"</p>
-        <div class="review-author">
-          <div class="review-avatar">LV</div>
-          <div>
-            <div class="review-name">Laura V.</div>
-            <div class="review-location">Gent</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="review-card">
-        <div class="review-stars">
-          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-        </div>
-        <p class="review-text">"Félix loste een koffiemachineprobleem op bij een klant van mij, voor een toestel dat hij zelf niet verkocht had. Zonder aarzelen, met succes. Zo hoort service te zijn!"</p>
-        <div class="review-author">
-          <div class="review-avatar">BZ</div>
-          <div>
-            <div class="review-name">Bart Z.</div>
-            <div class="review-location">Kortrijk</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Elfsight Google Reviews | Fixmijnkoffiemachine -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-6871e462-f3c0-48e8-82f7-2a724442effa" data-elfsight-app-lazy></div>
   </div>
 </section>
 
@@ -1303,7 +1241,7 @@
         </div>
         <div class="faq-a">
           <div class="faq-a-inner">
-            Elke interventie start met een vast tarief van <strong>€75 incl. BTW</strong>. Daarin zit de verplaatsing én het eerste uur werk inbegrepen. Duurt de reparatie langer, dan rekenen we <strong>€60 per bijkomend uur</strong>. Je krijgt altijd een prijsbevestiging voor we aan de slag gaan — geen verrassingen achteraf.
+            Elke herstelling start met een vast tarief van <strong>€75 incl. BTW</strong>. Daarin zitten de diagnose én het eerste uur werk. Duurt de reparatie langer, dan rekenen we <strong>€60 per bijkomend uur</strong>. Je krijgt altijd een prijsbevestiging voor we aan de slag gaan — geen verrassingen achteraf.
           </div>
         </div>
       </div>
@@ -1322,36 +1260,36 @@
 
       <div class="faq-item">
         <div class="faq-q">
-          Kan mijn machine ter plaatse gerepareerd worden?
+          Komen jullie ook aan huis?
           <div class="faq-arrow">▼</div>
         </div>
         <div class="faq-a">
           <div class="faq-a-inner">
-            In de meeste gevallen ja. De technicus heeft standaard wisselstukken bij. Bij complexere defecten of als specifieke onderdelen besteld moeten worden, installeren wij een <strong>vervangmachine</strong> zodat je niet zonder koffie valt.
+            Nee. Alle herstellingen gebeuren in ons atelier. Je brengt je machine binnen bij <strong>Matubu Coffee Roastery in Brugge</strong> (tijdens de openingsuren) of op afspraak in <strong>Brugge (Pathoekeweg)</strong>, <strong>Gent (Keizer Karelstraat)</strong> of <strong>Gentbrugge</strong>. Kan je ondertussen niet zonder koffie? Vraag dan een <strong>leenmachine</strong> aan in het formulier (betalend, prijs afhankelijk van machine en duur).
           </div>
         </div>
       </div>
 
       <div class="faq-item">
         <div class="faq-q">
-          Hoe snel zijn jullie ter plaatse?
+          Wat wordt er precies hersteld?
           <div class="faq-arrow">▼</div>
         </div>
         <div class="faq-a">
           <div class="faq-a-inner">
-            We streven ernaar om binnen 1–3 werkdagen langs te komen. In dringende gevallen (professionele klanten, kantoor of horeca) proberen we sneller te schakelen. Neem contact op en we zoeken samen de vroegst mogelijke datum.
+            <strong>Enkel de problemen die je in het formulier noteert.</strong> Zo weet de technieker exact wat er moet gebeuren en is er achteraf geen discussie. Noteer dus alles wat je opgelost wil zien. Merken we tijdens de herstelling nog iets anders op, dan melden we dat eerst: zonder jouw akkoord doen we niets extra.
           </div>
         </div>
       </div>
 
       <div class="faq-item">
         <div class="faq-q">
-          Rijden jullie ook naar Gent, Oostende of Kortrijk?
+          Kan ik jullie bellen?
           <div class="faq-arrow">▼</div>
         </div>
         <div class="faq-a">
           <div class="faq-a-inner">
-            Ja. Wij zijn actief in het volledige grondgebied van <strong>West-Vlaanderen en Oost-Vlaanderen</strong>. De verplaatsing én het eerste uur werk zitten inbegrepen in het vaste tarief van €75 — geen toeslag per kilometer.
+            Alle aanvragen lopen via het <a href="#contact" style="color:var(--orange);font-weight:600;">formulier</a>. Zo komt je vraag volledig en op papier bij de technieker terecht. Wij nemen daarna zelf contact met je op.
           </div>
         </div>
       </div>
@@ -1386,34 +1324,36 @@
 <!-- === CONTACT === -->
 <section class="section" id="contact">
   <div class="container">
-    <div class="badge">Neem contact op</div>
-    <h2 class="section-title">Maak een afspraak</h2>
-    <p class="section-sub">Vul het formulier in of contacteer ons direct. We nemen contact op voor de volgende werkdag.</p>
+    <div class="badge">Reparatie aanvragen</div>
+    <h2 class="section-title">Vraag je herstelling aan</h2>
+    <p class="section-sub">Alle aanvragen lopen via dit formulier. Vul het volledig in: wij nemen daarna zelf contact met je op om het binnenbrengen af te spreken.</p>
 
     <div class="contact-grid">
       <div class="contact-form-wrap">
-        <h3>Stuur je reparatieverzoek</h3>
+        <h3>Jouw reparatieaanvraag</h3>
         <form id="contactForm" name="reparatieverzoek" method="POST" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="reparatieverzoek" />
+          <input type="hidden" name="bron" id="bron" value="Website" />
+          <input type="hidden" name="aangeduide_problemen" id="aangeduideProblemen" />
           <p style="display:none;"><input name="bot-field" /></p>
           <div class="form-row">
             <div class="form-group">
               <label for="naam">Naam *</label>
-              <input type="text" id="naam" name="naam" placeholder="Jan Janssen" required />
+              <input type="text" id="naam" name="naam" placeholder="Jan Janssen" autocomplete="name" required />
             </div>
             <div class="form-group">
               <label for="tel">Telefoonnummer *</label>
-              <input type="tel" id="tel" name="tel" placeholder="0470 00 00 00" required />
+              <input type="tel" id="tel" name="tel" placeholder="0470 00 00 00" autocomplete="tel" required />
             </div>
           </div>
           <div class="form-group">
-            <label for="email">E-mailadres</label>
-            <input type="email" id="email" name="email" placeholder="jan@voorbeeld.be" />
+            <label for="email">E-mailadres *</label>
+            <input type="email" id="email" name="email" placeholder="jan@voorbeeld.be" autocomplete="email" required />
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label for="merk">Merk machine</label>
-              <select id="merk" name="merk">
+              <label for="merk">Merk machine *</label>
+              <select id="merk" name="merk" required>
                 <option value="">Selecteer merk...</option>
                 <option>Jura</option>
                 <option>DeLonghi</option>
@@ -1429,86 +1369,134 @@
               </select>
             </div>
             <div class="form-group">
-              <label for="gemeente">Gemeente</label>
-              <input type="text" id="gemeente" name="gemeente" placeholder="bv. Gent" />
+              <label for="model">Model / type *</label>
+              <input type="text" id="model" name="model" placeholder="bv. Jura E8, Magnifica S" required />
             </div>
           </div>
+
           <div class="form-group">
-            <label for="probleem">Beschrijf het probleem *</label>
-            <textarea id="probleem" name="probleem" placeholder="Wat doet je machine precies? Welke foutmelding zie je? Hoe lang is het al zo?" required></textarea>
+            <label>Waar breng je de machine binnen? *</label>
+            <div class="choice-grid">
+              <label class="choice">
+                <input type="radio" name="afgiftepunt" value="Brugge - Matubu Coffee Roastery (openingsuren)" required />
+                <div><strong>Brugge · Matubu Coffee Roastery</strong><span>Dorpsplein 17, Dudzele · tijdens de openingsuren</span></div>
+              </label>
+              <label class="choice">
+                <input type="radio" name="afgiftepunt" value="Brugge - Pathoekeweg (op afspraak)" />
+                <div><strong>Brugge · Pathoekeweg</strong><span>Op afspraak</span></div>
+              </label>
+              <label class="choice">
+                <input type="radio" name="afgiftepunt" value="Gent - Keizer Karelstraat (op afspraak)" />
+                <div><strong>Gent · Keizer Karelstraat</strong><span>Op afspraak</span></div>
+              </label>
+              <label class="choice">
+                <input type="radio" name="afgiftepunt" value="Gentbrugge (op afspraak)" />
+                <div><strong>Gentbrugge</strong><span>Op afspraak</span></div>
+              </label>
+            </div>
           </div>
+
+          <div class="form-group">
+            <label>Wat is er mis? Duid alles aan wat van toepassing is</label>
+            <div class="check-grid" id="probleemChecks">
+              <label><input type="checkbox" value="Geen of weinig koffie" /> Geen of weinig koffie</label>
+              <label><input type="checkbox" value="Lekt water" /> Lekt water</label>
+              <label><input type="checkbox" value="Foutmelding of lampje" /> Foutmelding of lampje</label>
+              <label><input type="checkbox" value="Melkopschuimer werkt niet" /> Melkopschuimer werkt niet</label>
+              <label><input type="checkbox" value="Koffie niet warm genoeg" /> Koffie niet warm genoeg</label>
+              <label><input type="checkbox" value="Maalt niet / molen blokkeert" /> Maalt niet / molen blokkeert</label>
+              <label><input type="checkbox" value="Vreemd geluid" /> Vreemd geluid</label>
+              <label><input type="checkbox" value="Gaat niet aan" /> Gaat niet aan</label>
+              <label><input type="checkbox" value="Onderhoud / ontkalken" /> Onderhoud / ontkalken</label>
+              <label><input type="checkbox" value="Ander probleem (zie beschrijving)" /> Ander probleem</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="foutcode">Foutcode of melding op het scherm</label>
+            <input type="text" id="foutcode" name="foutcode" placeholder="bv. 'Error 8', 'Ontkalk nu', knipperend lampje" />
+          </div>
+
+          <div class="form-group">
+            <label for="probleem">Beschrijf ELK probleem dat je opgelost wil zien *</label>
+            <div class="form-alert">
+              <strong>Belangrijk:</strong> we herstellen <strong>enkel</strong> wat hier staat. Wat niet in deze lijst staat, wordt niet hersteld. Zet dus elk probleem op een aparte regel en noteer alles.
+            </div>
+            <textarea id="probleem" name="probleem" rows="6" minlength="15" required placeholder="1. Machine geeft maar een halve tas koffie&#10;2. Lekt water onderaan na het spoelen&#10;3. Melkopschuimer maakt geen schuim meer"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-check"><input type="checkbox" name="leenmachine" value="Ja" /> Ik wil een leenmachine huren tijdens de herstelling (betalend, prijs afhankelijk van machine &amp; duur)</label>
+          </div>
+
+          <div class="form-consent">
+            <label class="form-check"><input type="checkbox" name="akkoord_enkel_beschreven_problemen" value="Ja" required /> Ik begrijp dat enkel de problemen die ik hierboven beschreef, hersteld worden. Bijkomende herstellingen gebeuren pas na mijn akkoord. *</label>
+          </div>
+
           <button type="submit" class="form-submit">
-            📋 Verstuur mijn reparatieverzoek
+            Verstuur mijn reparatieaanvraag
           </button>
           <p id="formMsg" style="margin-top:12px;font-size:.88rem;color:#22c55e;display:none;">
-            ✓ Bedankt! We nemen zo snel mogelijk contact met je op.
+            ✓ Bedankt! Je aanvraag is goed ontvangen. We nemen contact met je op om het binnenbrengen af te spreken.
+          </p>
+          <p id="formErr" class="form-error">
+            Er ging iets mis bij het versturen. Probeer het opnieuw.
           </p>
         </form>
       </div>
 
       <div class="contact-direct">
-        <h3>Of contacteer ons direct</h3>
+        <h3>Zo verloopt het</h3>
 
         <div class="contact-option">
-          <div class="contact-option-icon icon-blue">📞</div>
+          <div class="contact-option-icon icon-orange">1</div>
           <div>
-            <div class="contact-option-label">Telefoon</div>
-            <div class="contact-option-val"><a href="tel:+32475206236">0475 20 62 36</a></div>
-            <div class="contact-option-sub">Bereikbaar op afspraak</div>
+            <div class="contact-option-label">Aanvraag</div>
+            <div class="contact-option-val">Vul het formulier volledig in</div>
+            <div class="contact-option-sub">Noteer elk probleem dat je opgelost wil zien</div>
           </div>
         </div>
 
         <div class="contact-option">
-          <div class="contact-option-icon icon-green">💬</div>
+          <div class="contact-option-icon icon-blue">2</div>
           <div>
-            <div class="contact-option-label">WhatsApp</div>
-            <div class="contact-option-val"><a href="https://wa.me/32475206236" target="_blank">+32 475 20 62 36</a></div>
-            <div class="contact-option-sub">Stuur gerust een foto van je machine</div>
+            <div class="contact-option-label">Bevestiging</div>
+            <div class="contact-option-val">Wij nemen contact met je op</div>
+            <div class="contact-option-sub">We spreken af wanneer je de machine binnenbrengt</div>
           </div>
         </div>
 
         <div class="contact-option">
-          <div class="contact-option-icon icon-orange">📍</div>
+          <div class="contact-option-icon icon-orange">3</div>
           <div>
-            <div class="contact-option-label">Uitvalsbasis</div>
-            <div class="contact-option-val">Dorpsplein 17, 8380 Brugge</div>
-            <div class="contact-option-sub">Actief in Oost- & West-Vlaanderen</div>
+            <div class="contact-option-label">Binnenbrengen</div>
+            <div class="contact-option-val">Op het afgiftepunt dat je koos</div>
+            <div class="contact-option-sub">Brugge, Gent of Gentbrugge · <a href="#afgifte" style="color:var(--orange);">bekijk de afgiftepunten</a></div>
           </div>
         </div>
 
-        <div class="contact-option">
-          <div class="contact-option-icon icon-blue">✉️</div>
-          <div>
-            <div class="contact-option-label">E-mail</div>
-            <div class="contact-option-val"><a href="mailto:info@matubu.be">info@matubu.be</a></div>
-            <div class="contact-option-sub">Antwoord binnen 1 werkdag</div>
-          </div>
-        </div>
-
-        <a href="https://wa.me/32475206236?text=Hallo%2C%20ik%20heb%20een%20probleem%20met%20mijn%20koffiemachine." class="wa-btn" target="_blank">
-          💬 Chat via WhatsApp
-        </a>
-
-        <div class="open-hours">
-          <h4>Showroom Brugge</h4>
-          <div class="hours-row"><span class="day">Bezoek & interventies</span><span class="time">Op afspraak</span></div>
-          <div class="hours-row"><span class="day">Dorpsplein 17, 8380 Brugge</span></div>
+        <div class="why-form">
+          <h4>Waarom alles via het formulier?</h4>
+          <ul>
+            <li>De technieker krijgt meteen alle info, zwart op wit.</li>
+            <li>Jij weet precies wat er hersteld wordt, en wat het kost.</li>
+            <li>Geen misverstanden achteraf over wat wel of niet gevraagd was.</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- === INTERVENTIES BANNER === -->
+<!-- === AFGIFTE BANNER === -->
 <section style="background:var(--blue);padding:40px 0;">
   <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
     <div>
-      <div style="color:var(--orange);font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;">Interventies op afspraak</div>
-      <p style="color:#fff;font-size:1.1rem;font-weight:600;margin:0;">We komen ter plaatse in Oost- en West-Vlaanderen. Plan je afspraak eenvoudig via telefoon of WhatsApp.</p>
+      <div style="color:var(--orange);font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;">Binnenbrengen in Brugge of Gent</div>
+      <p style="color:#fff;font-size:1.1rem;font-weight:600;margin:0;">Vraag je herstelling aan via het formulier. Wij nemen contact met je op.</p>
     </div>
     <div style="display:flex;gap:12px;flex-shrink:0;flex-wrap:wrap;">
-      <a href="tel:+32475206236" style="background:var(--orange);color:#fff;font-weight:700;padding:12px 24px;border-radius:8px;text-decoration:none;white-space:nowrap;">📞 Bel ons</a>
-      <a href="https://wa.me/32475206236" target="_blank" style="background:#25D366;color:#fff;font-weight:700;padding:12px 24px;border-radius:8px;text-decoration:none;white-space:nowrap;">💬 WhatsApp</a>
+      <a href="#contact" style="background:var(--orange);color:#fff;font-weight:700;padding:12px 24px;border-radius:8px;text-decoration:none;white-space:nowrap;">Reparatie aanvragen</a>
     </div>
   </div>
 </section>
@@ -1521,7 +1509,7 @@
         <a href="#" class="logo" style="color:var(--white);">
           fix<span style="color:var(--orange);">mijn</span>koffiemachine<span style="color:var(--orange);">.be</span>
         </a>
-        <p>Specialist in reparatie van volautomatische koffiemachines in Oost- en West-Vlaanderen. Snel, eerlijk en vakkundig vanuit Brugge.</p>
+        <p>Specialist in reparatie van volautomatische koffiemachines. Breng je machine binnen in Brugge, Gent of Gentbrugge. Eerlijk en vakkundig.</p>
       </div>
 
       <div class="footer-col">
@@ -1530,28 +1518,26 @@
           <li><a href="#diensten">Reparatie volautomaat</a></li>
           <li><a href="#diensten">Reparatie Nespresso</a></li>
           <li><a href="#diensten">Preventief onderhoud</a></li>
-          <li><a href="#diensten">Vervangmachine</a></li>
+          <li><a href="#diensten">Leenmachine</a></li>
           <li><a href="#diensten">B2B service</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Servicegebied</h4>
+        <h4>Afgiftepunten</h4>
         <ul>
-          <li><a href="#zone">West-Vlaanderen</a></li>
-          <li><a href="#zone">Oost-Vlaanderen</a></li>
-          <li><a href="#zone">Brugge (uitvalsbasis)</a></li>
-          <li><a href="#zone">Gent</a></li>
-          <li><a href="#zone">Kortrijk – Roeselare</a></li>
+          <li><a href="#afgifte">Brugge · Matubu Coffee Roastery</a></li>
+          <li><a href="#afgifte">Brugge · Pathoekeweg</a></li>
+          <li><a href="#afgifte">Gent · Keizer Karelstraat</a></li>
+          <li><a href="#afgifte">Gentbrugge</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
-          <li><a href="tel:+32475206236">0475 20 62 36</a></li>
-          <li><a href="mailto:info@matubu.be">info@matubu.be</a></li>
-          <li><a href="#contact">Afspraak maken</a></li>
+          <li><a href="#contact">Reparatie aanvragen</a></li>
+          <li><a href="#hoe">Hoe het werkt</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </div>
@@ -1590,93 +1576,21 @@
     pane: 'shadowPane',
   }).addTo(map);
 
-  // West-Vlaanderen — kustlijn + provinciegrenzen
-  const westVl = [
-    [51.072, 2.590],  // De Panne (kust)
-    [51.130, 2.640],
-    [51.175, 2.720],  // Nieuwpoort
-    [51.230, 2.915],  // Oostende
-    [51.270, 3.020],  // De Haan
-    [51.310, 3.140],  // Blankenberge
-    [51.358, 3.220],  // Zeebrugge
-    [51.363, 3.305],  // Knokke — grens met Oost-Vl
-    [51.220, 3.490],  // Maldegem richting
-    [51.060, 3.530],  // Deinze/Nevele grens
-    [50.990, 3.530],
-    [50.900, 3.440],  // Waregem
-    [50.830, 3.280],  // Kortrijk oost
-    [50.805, 3.130],  // Menen
-    [50.720, 2.980],  // Wervik / Franse grens
-    [50.700, 2.840],  // Ieper south
-    [50.720, 2.720],  // Poperinge
-    [50.840, 2.570],  // Lo-Reninge
-    [51.072, 2.590],  // terug naar De Panne
+  // Afgiftepunten (posities bij benadering; exact adres volgt bij bevestiging)
+  const afgiftepunten = [
+    { pos: [51.2747, 3.2290], label: 'Matubu', dir: 'right', popup: '<strong>Matubu Coffee Roastery</strong><br>Dorpsplein 17, 8380 Brugge (Dudzele)<br>Tijdens de openingsuren' },
+    { pos: [51.2265, 3.2060], label: 'Pathoekeweg', dir: 'left', popup: '<strong>Brugge · Pathoekeweg</strong><br>Op afspraak' },
+    { pos: [51.0505, 3.7345], label: 'Keizer Karelstraat', dir: 'left', popup: '<strong>Gent · Keizer Karelstraat</strong><br>Op afspraak' },
+    { pos: [51.0395, 3.7630], label: 'Gentbrugge', dir: 'right', popup: '<strong>Gentbrugge</strong><br>Op afspraak' },
   ];
 
-  // Oost-Vlaanderen — provinciegrenzen
-  const oostVl = [
-    [51.363, 3.305],  // Knokke — grens met West-Vl
-    [51.375, 3.520],  // Knokke-Heist oost
-    [51.380, 3.740],  // Zelzate (grens NL)
-    [51.355, 3.900],
-    [51.300, 4.050],  // Sint-Niklaas north
-    [51.220, 4.220],  // Antwerpen grens
-    [51.100, 4.235],
-    [50.980, 4.180],
-    [50.890, 4.020],  // Ninove
-    [50.810, 3.900],  // Ronse/Oudenaarde
-    [50.750, 3.700],  // Zuid grens
-    [50.740, 3.580],
-    [50.900, 3.440],  // terug naar grens West-Vl
-    [50.990, 3.530],
-    [51.060, 3.530],
-    [51.220, 3.490],
-    [51.363, 3.305],  // terug naar Knokke
-  ];
-
-  L.polygon(westVl, {
-    color: '#E8620A',
-    fillColor: '#E8620A',
-    fillOpacity: 0.22,
-    weight: 2,
-  }).addTo(map).bindPopup('<strong>West-Vlaanderen</strong><br>Volledig servicegebied');
-
-  L.polygon(oostVl, {
-    color: '#5BC8F5',
-    fillColor: '#5BC8F5',
-    fillOpacity: 0.22,
-    weight: 2,
-  }).addTo(map).bindPopup('<strong>Oost-Vlaanderen</strong><br>Volledig servicegebied');
-
-  // Brugge marker
-  const brugesIcon = L.divIcon({
-    html: `<div style="display:flex;flex-direction:column;align-items:center;gap:0;">
-      <div style="
-        background:#E8620A;
-        color:white;
-        font-size:12px;
-        font-weight:800;
-        padding:7px 14px;
-        border-radius:100px;
-        white-space:nowrap;
-        border:2.5px solid white;
-        box-shadow:0 3px 14px rgba(0,0,0,.5);
-        letter-spacing:.03em;
-      ">📍 Brugge</div>
-      <div style="
-        width:2px;height:10px;
-        background:white;
-        margin:0 auto;
-        box-shadow:0 2px 4px rgba(0,0,0,.3);
-      "></div>
-    </div>`,
-    iconAnchor: [46, 32],
-    className: '',
+  afgiftepunten.forEach(p => {
+    L.circleMarker(p.pos, { radius: 8, color: '#fff', weight: 2.5, fillColor: '#E8620A', fillOpacity: 1 })
+      .addTo(map)
+      .bindPopup(p.popup)
+      .bindTooltip(p.label, { permanent: true, direction: p.dir, offset: [p.dir === 'left' ? -8 : 8, 0] });
   });
-
-  L.marker([51.2093, 3.2247], { icon: brugesIcon })
-    .addTo(map)
-    .bindPopup('<strong>Fixmijnkoffiemachine.be</strong><br>Uitvalsbasis Brugge<br>📞 0475 20 62 36');
+  map.fitBounds(afgiftepunten.map(p => p.pos), { padding: [60, 60] });
 
   // === FAQ ACCORDION ===
   document.querySelectorAll('.faq-q').forEach(q => {
@@ -1697,18 +1611,40 @@
     });
   });
 
+  // === BRON (bv. ?utm_source=google vanuit het Google-bedrijfsprofiel) ===
+  (function () {
+    const src = (new URLSearchParams(location.search).get('utm_source') || '').toLowerCase();
+    const bron = document.getElementById('bron');
+    if (!src || !bron) return;
+    bron.value = (src === 'google' || src === 'gbp') ? 'Google Bedrijfsprofiel' : 'Website (' + src.slice(0, 40) + ')';
+  })();
+
   // === CONTACT FORM ===
   document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const form = e.target;
-    const data = new FormData(form);
-    fetch('/', { method: 'POST', body: data })
-      .then(() => {
-        document.getElementById('formMsg').style.display = 'block';
+    const msg = document.getElementById('formMsg');
+    const err = document.getElementById('formErr');
+    const btn = form.querySelector('.form-submit');
+    msg.style.display = 'none';
+    err.style.display = 'none';
+
+    const checked = [...document.querySelectorAll('#probleemChecks input:checked')].map(c => c.value);
+    document.getElementById('aangeduideProblemen').value = checked.join(', ');
+
+    btn.disabled = true;
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString(),
+    })
+      .then(res => {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        msg.style.display = 'block';
         form.reset();
-        setTimeout(() => { document.getElementById('formMsg').style.display = 'none'; }, 6000);
       })
-      .catch(() => alert('Er ging iets mis. Probeer ons te bereiken via telefoon of WhatsApp.'));
+      .catch(() => { err.style.display = 'block'; })
+      .finally(() => { btn.disabled = false; });
   });
 
   // === HAMBURGER ===
@@ -1745,8 +1681,6 @@
   "taxID": "BE 1001.972.089",
   "description": "Specialist in reparatie van volautomatische koffiemachines in Oost- en West-Vlaanderen. Jura, De'Longhi, Philips, Saeco, Siemens, Miele, WMF, Krups en Nespresso capsuletoestellen.",
   "url": "https://fixmijnkoffiemachine.com",
-  "telephone": "+32475206236",
-  "email": "info@matubu.be",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Dorpsplein 17",
@@ -1761,17 +1695,8 @@
     "longitude": 3.2247
   },
   "areaServed": [
-    { "@type": "AdministrativeArea", "name": "West-Vlaanderen" },
-    { "@type": "AdministrativeArea", "name": "Oost-Vlaanderen" }
-  ],
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-      "opens": "08:00",
-      "closes": "20:00",
-      "description": "Op afspraak"
-    }
+    { "@type": "City", "name": "Brugge" },
+    { "@type": "City", "name": "Gent" }
   ],
   "priceRange": "€€",
   "currenciesAccepted": "EUR",
@@ -1790,7 +1715,7 @@
       "name": "Hoeveel kost een reparatie in totaal?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Elke interventie start met een vast tarief van €75 incl. BTW. Daarin zit de verplaatsing én het eerste uur werk inbegrepen. Duurt de reparatie langer, dan rekenen we €60 per bijkomend uur. Wisselstukken zijn apart en worden nooit geplaatst zonder uw goedkeuring op prijs."
+        "text": "Elke herstelling start met een vast tarief van €75 incl. BTW. Daarin zitten de diagnose én het eerste uur werk. Duurt de reparatie langer, dan rekenen we €60 per bijkomend uur. Wisselstukken zijn apart en worden nooit geplaatst zonder uw goedkeuring op prijs."
       }
     },
     {
@@ -1803,26 +1728,26 @@
     },
     {
       "@type": "Question",
-      "name": "Kan mijn machine ter plaatse gerepareerd worden?",
+      "name": "Komen jullie ook aan huis?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In de meeste gevallen ja. De technicus heeft standaard wisselstukken bij. Bij complexere defecten installeren wij een vervangmachine zodat je niet zonder koffie valt."
+        "text": "Nee. Alle herstellingen gebeuren in ons atelier. Je brengt je machine binnen bij Matubu Coffee Roastery in Brugge (tijdens de openingsuren) of op afspraak in Brugge (Pathoekeweg), Gent (Keizer Karelstraat) of Gentbrugge. Een leenmachine is beschikbaar tegen betaling; de prijs hangt af van de machine en de duur."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe snel zijn jullie ter plaatse?",
+      "name": "Wat wordt er precies hersteld?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We streven ernaar om binnen 1 tot 3 werkdagen langs te komen. In dringende gevallen proberen we sneller te schakelen."
+        "text": "Enkel de problemen die je in het formulier noteert. Merken we tijdens de herstelling nog iets anders op, dan melden we dat eerst: zonder jouw akkoord doen we niets extra."
       }
     },
     {
       "@type": "Question",
-      "name": "Rijden jullie ook naar Gent, Oostende of Kortrijk?",
+      "name": "Kan ik jullie bellen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. Wij zijn actief in het volledige grondgebied van West-Vlaanderen en Oost-Vlaanderen. De verplaatsing én het eerste uur werk zitten inbegrepen in het vaste tarief van €75 — geen toeslag per kilometer."
+        "text": "Alle aanvragen lopen via het formulier op de website. Zo komt je vraag volledig en op papier bij de technieker terecht. Wij nemen daarna zelf contact met je op."
       }
     },
     {
@@ -1837,5 +1762,371 @@
 }
 </script>
 
+<!-- CHAT-START -->
+<style>
+  .chat-launcher {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 18px 8px 8px; border: none; cursor: pointer;
+    background: var(--blue); color: var(--white); border-radius: 100px;
+    font: 700 .9rem 'Inter', sans-serif; box-shadow: 0 4px 20px rgba(0,0,0,.25);
+    transition: transform .2s, box-shadow .2s;
+  }
+  .chat-launcher:hover { transform: translateY(-2px); box-shadow: 0 6px 28px rgba(0,0,0,.3); }
+  .chat-avatar {
+    position: relative; width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0;
+    background: var(--orange); color: var(--white); display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: .95rem; font-family: 'Be Vietnam Pro', 'Inter', sans-serif;
+  }
+  .chat-avatar::after {
+    content: ''; position: absolute; right: -1px; bottom: -1px; width: 11px; height: 11px;
+    border-radius: 50%; background: #22c55e; border: 2px solid var(--blue);
+  }
+  .chat-panel {
+    position: fixed; right: 24px; bottom: 24px; z-index: 1001;
+    width: 380px; height: min(620px, calc(100vh - 48px));
+    background: var(--white); border-radius: 20px; box-shadow: 0 12px 48px rgba(12,59,94,.28);
+    display: flex; flex-direction: column; overflow: hidden;
+    opacity: 0; transform: translateY(16px) scale(.98); pointer-events: none;
+    transition: opacity .2s ease, transform .2s ease;
+  }
+  .chat-panel.open { opacity: 1; transform: none; pointer-events: auto; }
+  body.chat-open .float-cta { display: none; }
+  .chat-head {
+    display: flex; align-items: center; gap: 12px; padding: 14px 16px;
+    background: var(--blue); color: var(--white);
+  }
+  .chat-head-name { font-weight: 700; font-size: .98rem; line-height: 1.2; }
+  .chat-head-sub { font-size: .76rem; color: rgba(255,255,255,.7); }
+  .chat-close {
+    margin-left: auto; background: rgba(255,255,255,.12); border: none; color: var(--white);
+    width: 32px; height: 32px; border-radius: 50%; cursor: pointer; font-size: 1.1rem; line-height: 1;
+  }
+  .chat-close:hover { background: rgba(255,255,255,.22); }
+  .chat-log {
+    flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 10px;
+    background: var(--gray-50);
+  }
+  .chat-msg {
+    max-width: 85%; padding: 10px 14px; border-radius: 16px; font-size: .9rem; line-height: 1.5;
+    white-space: pre-wrap; overflow-wrap: anywhere;
+  }
+  .chat-msg.bot { align-self: flex-start; background: var(--white); color: var(--text); border: 1px solid var(--gray-200); border-bottom-left-radius: 4px; }
+  .chat-msg.user { align-self: flex-end; background: var(--orange); color: var(--white); border-bottom-right-radius: 4px; }
+  .chat-msg a { color: var(--orange); text-decoration: underline; }
+  .chat-typing { display: inline-flex; gap: 4px; padding: 14px; }
+  .chat-typing span { width: 7px; height: 7px; border-radius: 50%; background: var(--gray-400); animation: chatDot 1.2s infinite; }
+  .chat-typing span:nth-child(2) { animation-delay: .15s; }
+  .chat-typing span:nth-child(3) { animation-delay: .3s; }
+  @keyframes chatDot { 0%, 60%, 100% { opacity: .3; transform: none; } 30% { opacity: 1; transform: translateY(-3px); } }
+  .chat-cta {
+    display: none; align-items: center; gap: 10px; padding: 10px 16px;
+    background: rgba(232,98,10,.08); border-top: 1px solid rgba(232,98,10,.2);
+    font-size: .82rem; color: var(--gray-800);
+  }
+  .chat-cta.show { display: flex; }
+  .chat-cta button {
+    margin-left: auto; flex-shrink: 0; border: none; cursor: pointer; border-radius: 100px;
+    background: var(--orange); color: var(--white); font: 700 .82rem 'Inter', sans-serif; padding: 8px 14px;
+  }
+  .chat-cta button:hover { background: var(--orange-hover); }
+  .chat-chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 16px 4px; border-top: 1px solid var(--gray-200); }
+  .chat-chip {
+    border: 1.5px solid var(--gray-200); background: var(--white); color: var(--blue);
+    border-radius: 100px; padding: 6px 12px; font: 600 .78rem 'Inter', sans-serif; cursor: pointer;
+    text-align: left; transition: border-color .2s, background .2s;
+  }
+  .chat-chip:hover { border-color: var(--orange); background: rgba(232,98,10,.05); }
+  .chat-form { display: flex; gap: 8px; padding: 8px 16px 6px; }
+  .chat-input {
+    flex: 1; min-width: 0; border: 1.5px solid var(--gray-200); border-radius: 100px;
+    padding: 10px 16px; font: .9rem 'Inter', sans-serif; outline: none; color: var(--text);
+  }
+  .chat-input:focus { border-color: var(--blue); }
+  .chat-send {
+    width: 42px; height: 42px; flex-shrink: 0; border: none; border-radius: 50%; cursor: pointer;
+    background: var(--blue); color: var(--white); font-size: 1.05rem;
+  }
+  .chat-send:disabled, .chat-input:disabled { opacity: .5; cursor: not-allowed; }
+  .chat-note { font-size: .68rem; color: var(--gray-600); text-align: center; padding: 0 16px 10px; }
+  @media (max-width: 520px) {
+    .chat-panel { right: 0; bottom: 0; width: 100%; height: 100%; height: 100dvh; border-radius: 0; }
+    .chat-launcher-label { display: none; }
+    .chat-launcher { padding: 8px; }
+  }
+</style>
+
+<div class="chat-panel" id="chatPanel" role="dialog" aria-label="Chat met Sam" aria-hidden="true">
+  <div class="chat-head">
+    <div class="chat-avatar" aria-hidden="true">S</div>
+    <div>
+      <div class="chat-head-name">Sam</div>
+      <div class="chat-head-sub">Digitale assistent · antwoordt meteen</div>
+    </div>
+    <button class="chat-close" id="chatClose" aria-label="Chat sluiten">×</button>
+  </div>
+  <div class="chat-log" id="chatLog" aria-live="polite"></div>
+  <div class="chat-cta" id="chatCta">
+    <span>Klaar om je herstelling aan te vragen?</span>
+    <button type="button" id="chatCtaBtn">Aanvraag indienen</button>
+  </div>
+  <div class="chat-chips" id="chatChips"></div>
+  <form class="chat-form" id="chatForm" autocomplete="off">
+    <input class="chat-input" id="chatInput" type="text" maxlength="1000" placeholder="Typ je vraag..." aria-label="Je vraag" />
+    <button class="chat-send" id="chatSend" type="submit" aria-label="Versturen">➤</button>
+  </form>
+  <div class="chat-note">Sam is een digitale assistent. Herstellingen vraag je aan via het formulier.</div>
+</div>
+
+<script>
+(function () {
+  // ===== KENNISBANK (aanpassen = gewoon tekst wijzigen) =====
+  // q: knoptekst · k: trefwoorden (zonder accenten, kleine letters) · a: antwoord
+  // next: vervolgvragen (ids) · cta: knop "Aanvraag indienen" meteen tonen
+  const MATUBU_UREN = 'https://matubucoffee.be/pages/contact-opnemen';
+  const KB = [
+    { id: 'prijs', q: 'Wat kost een herstelling?',
+      k: ['kost', 'kosten', 'prijs', 'prijzen', 'tarief', 'tarieven', 'euro', 'eur', 'hoeveel', 'betalen', 'goedkoop', 'duur is', 'offerte', 'uurloon', '75', '60'],
+      a: 'Elke herstelling start aan €75 incl. btw. Daarin zitten de diagnose en het eerste uur werk. Duurt het langer, dan is het €60 per bijkomend uur.\nWisselstukken komen er apart bij, en die plaatsen we nooit zonder jouw akkoord op de prijs.',
+      next: ['onderdelen', 'leenmachine', 'aanvragen'] },
+    { id: 'afgifte', q: 'Waar kan ik mijn machine binnenbrengen?',
+      k: ['waar', 'binnenbrengen', 'binnen brengen', 'afgeven', 'afgifte', 'brengen', 'adres', 'locatie', 'locaties', 'gent', 'brugge', 'gentbrugge', 'dudzele', 'pathoekeweg', 'keizer karel', 'atelier', 'winkel'],
+      a: 'Je kan je machine binnenbrengen op 4 plaatsen:\n- Brugge, Matubu Coffee Roastery (Dorpsplein 17, Dudzele): tijdens de openingsuren\n- Brugge, Pathoekeweg: op afspraak\n- Gent, Keizer Karelstraat: op afspraak\n- Gentbrugge: op afspraak\nHet exacte adres van de punten op afspraak krijg je bij de bevestiging van je aanvraag.',
+      next: ['uren', 'aanvragen', 'aanhuis'] },
+    { id: 'aanhuis', q: 'Komen jullie aan huis?',
+      k: ['aan huis', 'thuis', 'langs', 'langskomen', 'langs komen', 'ter plaatse', 'verplaatsing', 'verplaatsen', 'ophalen', 'oppikken', 'komen jullie', 'kom je', 'technieker langs'],
+      a: 'Nee, we komen niet aan huis. Alle herstellingen gebeuren in ons atelier. Zo heeft de technieker al zijn materiaal en onderdelen bij de hand.\nJe brengt je machine binnen in Brugge, Gent of Gentbrugge, en haalt ze daar ook weer op.',
+      next: ['afgifte', 'leenmachine', 'aanvragen'] },
+    { id: 'merken', q: 'Welke merken herstellen jullie?',
+      k: ['merk', 'merken', 'jura', 'delonghi', 'de longhi', 'philips', 'saeco', 'siemens', 'miele', 'wmf', 'krups', 'technicup', 'dr coffee', 'nespresso', 'sage', 'melitta', 'bosch', 'gaggia', 'volautomaat', 'capsule', 'capsules', 'type machine', 'model'],
+      a: 'We herstellen volautomatische koffiemachines van Jura, De\'Longhi, Philips, Saeco, Siemens, Miele, WMF, Krups, Technicup en Dr. Coffee, en ook Nespresso-capsuletoestellen.\nStaat jouw merk er niet bij? Dien gerust een aanvraag in met merk en model, dan bekijkt de technieker of we kunnen helpen.',
+      next: ['kapot', 'prijs', 'aanvragen'] },
+    { id: 'leenmachine', q: 'Kan ik een leenmachine krijgen?',
+      k: ['leenmachine', 'leen machine', 'vervangmachine', 'vervang machine', 'lenen', 'huren', 'zonder koffie', 'tijdelijk', 'reserve', 'in de tussentijd', 'ondertussen'],
+      a: 'Ja, je kan een leenmachine huren tijdens de herstelling. Dat is betalend; de prijs hangt af van de machine en de duur.\nVink het aan in het aanvraagformulier, dan kan je ze meenemen wanneer je je eigen machine binnenbrengt.',
+      next: ['prijs', 'doorlooptijd', 'aanvragen'] },
+    { id: 'aanvragen', q: 'Hoe vraag ik een herstelling aan?',
+      k: ['aanvragen', 'aanvraag', 'afspraak', 'formulier', 'boeken', 'inplannen', 'reserveren', 'herstelling aanvragen', 'laten herstellen', 'repareren laten', 'hoe werkt', 'hoe gaat', 'procedure', 'stappen', 'beginnen'],
+      a: 'Heel eenvoudig:\n1. Vul het aanvraagformulier in en kies waar je de machine binnenbrengt.\n2. Wij nemen contact met je op en spreken af wanneer je ze kan binnenbrengen.\n3. De technieker herstelt wat je in het formulier noteerde.\n4. Je haalt je machine op waar je ze binnenbracht.\nKlik op "Aanvraag indienen" om te starten.',
+      next: ['watinvullen', 'afgifte', 'prijs'], cta: true },
+    { id: 'watinvullen', q: 'Wat moet ik invullen in het formulier?',
+      k: ['invullen', 'wat moet ik', 'welke info', 'informatie', 'gegevens', 'beschrijven', 'beschrijving', 'noteren'],
+      a: 'Je naam, telefoon, e-mail, het merk en model van je machine, en waar je ze binnenbrengt.\nBelangrijkst: beschrijf elk probleem dat je opgelost wil zien, elk op een aparte regel. We herstellen enkel wat in het formulier staat, dus noteer ook kleine dingen. Heb je een foutcode op het scherm? Zet die er zeker bij.',
+      next: ['wathersteld', 'aanvragen'], cta: true },
+    { id: 'wathersteld', q: 'Wat wordt er precies hersteld?',
+      k: ['wat wordt', 'precies', 'hersteld', 'extra', 'bijkomend', 'alles hersteld', 'ook nakijken', 'nakijken', 'volledige', 'check'],
+      a: 'Enkel de problemen die je in het formulier noteert. Zo weet de technieker precies wat er moet gebeuren en is er achteraf geen discussie.\nZien we tijdens de herstelling nog iets anders, dan melden we dat eerst: zonder jouw akkoord doen we niets extra.',
+      next: ['watinvullen', 'prijs', 'aanvragen'] },
+    { id: 'contact', q: 'Kan ik jullie bellen?',
+      k: ['bellen', 'bel', 'telefoon', 'telefoonnummer', 'nummer', 'gsm', 'whatsapp', 'mail', 'email', 'e-mail', 'contact', 'contacteren', 'spreken', 'iemand spreken', 'mens spreken', 'medewerker'],
+      a: 'Alle aanvragen lopen via het formulier op de website. Zo komt je vraag volledig en zwart op wit bij de technieker terecht.\nNa je aanvraag nemen wij zelf contact met je op.',
+      next: ['aanvragen', 'watinvullen'], cta: true },
+    { id: 'uren', q: 'Wanneer kan ik bij Matubu terecht?',
+      k: ['open', 'openingsuren', 'openingsuur', 'uren', 'wanneer', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag', 'zondag', 'weekend', 'gesloten'],
+      a: 'Bij Matubu Coffee Roastery in Dudzele kan je terecht tijdens hun openingsuren. Die vind je hier: ' + MATUBU_UREN + '\nDe andere afgiftepunten (Pathoekeweg, Keizer Karelstraat en Gentbrugge) werken op afspraak.',
+      next: ['afgifte', 'aanvragen'] },
+    { id: 'doorlooptijd', q: 'Hoe lang duurt een herstelling?',
+      k: ['hoe lang', 'lang', 'duurt', 'duur het', 'termijn', 'wanneer klaar', 'klaar', 'snel', 'dagen', 'weken', 'wachttijd', 'spoed', 'dringend'],
+      a: 'Dat hangt af van het probleem en of er onderdelen besteld moeten worden. Bij de bevestiging van je aanvraag krijg je een inschatting.\nKan je niet zonder koffie? Je kan een leenmachine huren tijdens de herstelling.',
+      next: ['leenmachine', 'aanvragen'] },
+    { id: 'kapot', q: 'Mijn machine is kapot, wat nu?',
+      k: ['kapot', 'defect', 'stuk', 'lekt', 'lek', 'lekken', 'water', 'foutmelding', 'fout', 'error', 'code', 'lampje', 'knippert', 'geen koffie', 'werkt niet', 'doet niets', 'start niet', 'gaat niet aan', 'geluid', 'lawaai', 'molen', 'maalt', 'melk', 'opschuimer', 'schuim', 'lauw', 'koud', 'niet warm', 'zetgroep', 'verstopt', 'probleem', 'panne', 'pomp'],
+      a: 'Vervelend! Probeer eerst even dit: zet de machine uit en weer aan, controleer of het waterreservoir en de lekbak goed zitten, en kijk of de machine niet om ontkalken of reinigen vraagt.\nHelpt dat niet? Dien dan een aanvraag in en beschrijf elk probleem op een aparte regel (en een eventuele foutcode). Schroef de machine zeker niet zelf open.',
+      next: ['watinvullen', 'prijs', 'afgifte'], cta: true },
+    { id: 'onderhoud', q: 'Doen jullie ook onderhoud?',
+      k: ['onderhoud', 'ontkalken', 'ontkalking', 'kalk', 'reinigen', 'reiniging', 'poetsen', 'kuisen', 'proper', 'service', 'beurt', 'preventief'],
+      a: 'Ja. Een preventieve onderhoudsbeurt verlengt de levensduur van je machine en voorkomt dure pannes. Ze omvat reiniging, een ontkalkingscheck en het nakijken van de instellingen.\nVraag het aan via het formulier en noteer "onderhoud" bij je problemen.',
+      next: ['prijs', 'afgifte', 'aanvragen'], cta: true },
+    { id: 'b2b', q: 'Werken jullie ook voor bedrijven?',
+      k: ['bedrijf', 'bedrijven', 'kantoor', 'kantoren', 'horeca', 'restaurant', 'cafe', 'hotel', 'zaak', 'contract', 'onderhoudscontract', 'b2b', 'factuur', 'btw nummer', 'professioneel', 'meerdere machines'],
+      a: 'Zeker. We helpen particulieren en professionele klanten: kantoren, horeca en hotels. Voor bedrijven met meerdere machines bespreken we graag een onderhoudscontract op maat.\nDien een aanvraag in en vermeld dat het om je zaak gaat.',
+      next: ['onderhoud', 'leenmachine', 'aanvragen'], cta: true },
+    { id: 'waard', q: 'Is mijn machine het herstellen nog waard?',
+      k: ['waard', 'de moeite', 'nieuwe kopen', 'nieuwe', 'vervangen', 'rendabel', 'oud', 'oude machine', 'loont'],
+      a: 'Daar geven we altijd eerlijk advies over. Benaderen de herstelkosten de prijs van een nieuwe machine, dan zeggen we dat ook, zodat je zelf kan kiezen.\nOnderdelen plaatsen we nooit zonder jouw akkoord op de prijs.',
+      next: ['prijs', 'aanvragen'] },
+    { id: 'onderdelen', q: 'Hoe zit het met onderdelen?',
+      k: ['onderdeel', 'onderdelen', 'wisselstuk', 'wisselstukken', 'stukken', 'pakking', 'pakkingen', 'ketel', 'slang', 'origineel'],
+      a: 'We werken met originele en kwalitatieve vervangonderdelen, zoals pompen, ketels, pakkingen en slangetjes. Onderdelen zitten niet in het uurtarief en worden nooit geplaatst zonder jouw akkoord op de prijs.',
+      next: ['prijs', 'waard', 'aanvragen'] },
+    { id: 'bot', q: 'Ben jij een echte persoon?',
+      k: ['mens', 'robot', 'bot', 'chatbot', 'ai', 'echt persoon', 'echte persoon', 'computer', 'ben jij', 'wie ben'],
+      a: 'Ik ben Sam, de digitale assistent van fixmijnkoffiemachine.be. Ik beantwoord de meest gestelde vragen. Je aanvraag zelf wordt opgevolgd door een technieker.',
+      next: ['aanvragen', 'prijs', 'afgifte'] },
+  ];
+  const SMALLTALK = [
+    { k: ['bedankt', 'dank je', 'dankjewel', 'merci', 'thanks', 'top', 'super', 'oke', 'ok', 'perfect', 'duidelijk'],
+      a: 'Graag gedaan! Nog een vraag? Of dien meteen je aanvraag in, dan gaan we voor je aan de slag.' },
+    { k: ['hallo', 'hoi', 'hey', 'hi', 'dag', 'goeiedag', 'goedendag', 'goedemorgen', 'goeiemorgen', 'bonjour'],
+      a: 'Hoi! Waarmee kan ik je helpen? Je kan een vraag typen of hieronder op een vraag klikken.' },
+  ];
+  const FALLBACK = 'Daar heb ik geen pasklaar antwoord op, sorry. Dien je aanvraag in via het formulier en beschrijf je vraag of probleem, dan bekijkt een technieker het. Of kies hieronder een vraag.';
+  const START = ['prijs', 'afgifte', 'aanhuis', 'merken', 'leenmachine', 'aanvragen'];
+  const GREETING = 'Hoi! Ik ben Sam van fixmijnkoffiemachine.be. Heb je een vraag over je koffiemachine, onze prijzen of waar je ze kan binnenbrengen? Typ je vraag, of klik hieronder op een vraag.';
+  const CTA_AFTER = 2;
+
+  const byId = Object.fromEntries(KB.map(e => [e.id, e]));
+  const norm = s => ' ' + s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9€ ]+/g, ' ').replace(/\s+/g, ' ').trim() + ' ';
+
+  function match(text) {
+    const t = norm(text);
+    const exact = KB.find(e => norm(e.q) === t);
+    if (exact) return exact;
+    let best = null, bestScore = 0;
+    KB.forEach(e => {
+      let score = 0;
+      e.k.forEach(kw => {
+        if (t.includes(' ' + kw + ' ') || (kw.length >= 6 && t.includes(kw))) score += kw.includes(' ') ? 3 : 2;
+      });
+      if (score > bestScore) { best = e; bestScore = score; }
+    });
+    return best;
+  }
+  function smalltalk(text) {
+    const t = norm(text);
+    if (t.trim().split(' ').length > 4) return null;
+    const hit = SMALLTALK.find(s => s.k.some(kw => t.includes(' ' + kw + ' ')));
+    return hit ? hit.a : null;
+  }
+
+  const panel = document.getElementById('chatPanel');
+  const log = document.getElementById('chatLog');
+  const chips = document.getElementById('chatChips');
+  const cta = document.getElementById('chatCta');
+  const form = document.getElementById('chatForm');
+  const input = document.getElementById('chatInput');
+  const send = document.getElementById('chatSend');
+
+  const answered = new Set();
+  let questions = 0;
+  let busy = false;
+  let started = false;
+
+  const launcher = document.createElement('button');
+  launcher.type = 'button';
+  launcher.className = 'chat-launcher';
+  launcher.setAttribute('aria-label', 'Chat met Sam');
+  launcher.innerHTML = '<span class="chat-avatar" aria-hidden="true">S</span><span class="chat-launcher-label">Vragen? Chat met Sam</span>';
+  (document.querySelector('.float-cta') || document.body).appendChild(launcher);
+
+  const desktop = () => window.matchMedia('(min-width: 521px)').matches;
+
+  function openChat() {
+    panel.classList.add('open');
+    panel.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('chat-open');
+    if (!started) {
+      started = true;
+      addMsg('bot', GREETING);
+      renderChips(START);
+    }
+    if (desktop()) setTimeout(() => input.focus(), 200);
+  }
+  function closeChat() {
+    panel.classList.remove('open');
+    panel.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('chat-open');
+  }
+  launcher.addEventListener('click', openChat);
+  document.getElementById('chatClose').addEventListener('click', closeChat);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && panel.classList.contains('open')) closeChat(); });
+
+  document.getElementById('chatCtaBtn').addEventListener('click', () => {
+    closeChat();
+    const target = document.getElementById('contact');
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setTimeout(() => { const f = document.getElementById('naam'); if (f) f.focus({ preventScroll: true }); }, 700);
+  });
+
+  function addMsg(who, text) {
+    const el = document.createElement('div');
+    el.className = 'chat-msg ' + who;
+    text.split(/(https:\/\/[^\s)]+)/g).forEach((part, i) => {
+      if (i % 2 === 1) {
+        const a = document.createElement('a');
+        a.href = part.replace(/[.,]$/, '');
+        a.textContent = part;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        el.appendChild(a);
+      } else if (part) {
+        el.appendChild(document.createTextNode(part));
+      }
+    });
+    log.appendChild(el);
+    log.scrollTop = log.scrollHeight;
+    return el;
+  }
+
+  function showTyping() {
+    const el = document.createElement('div');
+    el.className = 'chat-msg bot chat-typing';
+    el.innerHTML = '<span></span><span></span><span></span>';
+    log.appendChild(el);
+    log.scrollTop = log.scrollHeight;
+    return el;
+  }
+
+  function renderChips(ids) {
+    chips.replaceChildren();
+    const fresh = ids.filter(id => byId[id] && !answered.has(id));
+    const fill = START.concat(KB.map(e => e.id)).filter(id => !answered.has(id) && !fresh.includes(id));
+    [...new Set(fresh.concat(fill))].slice(0, 3).forEach(id => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'chat-chip';
+      b.textContent = byId[id].q;
+      b.addEventListener('click', () => ask(byId[id].q));
+      chips.appendChild(b);
+    });
+  }
+
+  const showCta = () => cta.classList.add('show');
+
+  function setBusy(v) {
+    busy = v;
+    input.disabled = v;
+    send.disabled = v;
+    chips.querySelectorAll('button').forEach(b => { b.disabled = v; });
+  }
+
+  async function ask(text) {
+    text = (text || '').trim().slice(0, 500);
+    if (!text || busy) return;
+    addMsg('user', text);
+    input.value = '';
+    setBusy(true);
+
+    const entry = match(text);
+    const small = entry ? null : smalltalk(text);
+    const reply = entry ? entry.a : (small || FALLBACK);
+    if (!small) questions++;
+
+    const typing = showTyping();
+    await new Promise(r => setTimeout(r, Math.min(700 + reply.length * 5, 1800)));
+    typing.remove();
+
+    const botEl = addMsg('bot', reply);
+    if (entry) {
+      answered.add(entry.id);
+      renderChips(entry.next || []);
+      if (entry.cta) showCta();
+    } else {
+      renderChips(START);
+      if (!small) showCta();
+    }
+    if (questions >= CTA_AFTER) showCta();
+    setBusy(false);
+    requestAnimationFrame(() => {
+      const fits = botEl.offsetHeight < log.clientHeight - 16;
+      log.scrollTop = fits ? log.scrollHeight : botEl.offsetTop - log.offsetTop - 8;
+    });
+    if (desktop()) input.focus();
+  }
+
+  form.addEventListener('submit', e => { e.preventDefault(); ask(input.value); });
+})();
+</script>
+<!-- CHAT-END -->
 </body>
 </html>
